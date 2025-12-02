@@ -776,6 +776,7 @@ Converted["_SuperInfo"].BackgroundTransparency = 0.5
 Converted["_SuperInfo"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_SuperInfo"].BorderSizePixel = 0
 Converted["_SuperInfo"].ClipsDescendants = true
+Converted["_SuperInfo"].Visible = false
 Converted["_SuperInfo"].Position = UDim2.new(1, -161, 0.5, 60)
 Converted["_SuperInfo"].Size = UDim2.new(1, 0, 0, 160)
 Converted["_SuperInfo"].Name = "SuperInfo"
