@@ -170,7 +170,6 @@ Converted["_SGUI"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_SGUI"].Name = "SGUI"
 Converted["_SGUI"].Parent = game.CoreGui
 
-Converted["_laugh"].AudioContent = Content
 Converted["_laugh"].PlaybackSpeed = 0.699999988079071
 Converted["_laugh"].SoundId = "rbxassetid://133017003825496"
 Converted["_laugh"].Volume = 1
@@ -221,7 +220,6 @@ Converted["_CheatButton"].Size = UDim2.new(0, 32, 0, 32)
 Converted["_CheatButton"].Name = "CheatButton"
 Converted["_CheatButton"].Parent = Converted["_SGUI"]
 
-Converted["_clicking"].AudioContent = Content
 Converted["_clicking"].SoundId = "rbxassetid://113718914495453"
 Converted["_clicking"].Volume = 1
 Converted["_clicking"].Name = "clicking"
@@ -276,7 +274,6 @@ Converted["_UIAspectRatioConstraint1"].AspectRatio = 3
 Converted["_UIAspectRatioConstraint1"].Parent = Converted["_TextLabel"]
 
 Converted["_ImageLabel"].Image = "rbxassetid://80996204698132"
-Converted["_ImageLabel"].ImageContent = Content
 Converted["_ImageLabel"].AnchorPoint = Vector2.new(0, 0.5)
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BackgroundTransparency = 1
@@ -330,7 +327,6 @@ Converted["_UIAspectRatioConstraint4"].AspectRatio = 3
 Converted["_UIAspectRatioConstraint4"].Parent = Converted["_TextLabel1"]
 
 Converted["_ImageLabel1"].Image = "rbxassetid://87232556963761"
-Converted["_ImageLabel1"].ImageContent = Content
 Converted["_ImageLabel1"].AnchorPoint = Vector2.new(0, 0.5)
 Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel1"].BackgroundTransparency = 1
@@ -384,7 +380,6 @@ Converted["_UIAspectRatioConstraint7"].AspectRatio = 3
 Converted["_UIAspectRatioConstraint7"].Parent = Converted["_TextLabel2"]
 
 Converted["_ImageLabel2"].Image = "rbxassetid://282070336"
-Converted["_ImageLabel2"].ImageContent = Content
 Converted["_ImageLabel2"].AnchorPoint = Vector2.new(0, 0.5)
 Converted["_ImageLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel2"].BackgroundTransparency = 1
