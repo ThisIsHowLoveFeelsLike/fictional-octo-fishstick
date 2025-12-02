@@ -165,12 +165,10 @@ local Converted = {
 	["_UsersOnJoin"] = Instance.new("LocalScript");
 }
 
--- Properties:
-
 Converted["_SGUI"].IgnoreGuiInset = true
 Converted["_SGUI"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_SGUI"].Name = "SGUI"
-Converted["_SGUI"].Parent = game.Workspace
+Converted["_SGUI"].Parent = game.CoreGui
 
 Converted["_laugh"].AudioContent = Content
 Converted["_laugh"].PlaybackSpeed = 0.699999988079071
