@@ -1666,7 +1666,7 @@ Converted["_SettingFrame"].Parent = Converted["_CreepstuLab"]
 
 Converted["_Audibly"].Font = Enum.Font.Jura
 Converted["_Audibly"].Text = "Audibly"
-Converted["_Audibly"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Audibly"].TextColor3 = Color3.fromRGB(0, 255, 0)
 Converted["_Audibly"].TextScaled = true
 Converted["_Audibly"].TextSize = 14
 Converted["_Audibly"].TextWrapped = true
@@ -1735,21 +1735,21 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function XAWFQ_fake_script() -- Fake Script: Workspace.SGUI.History
-    local script = Instance.new("LocalScript")
-    script.Name = "History"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KXPXBC_fake_script() -- Fake Script: Workspace.SGUI.History
+	local script = Instance.new("LocalScript")
+	script.Name = "History"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local screenGui = script.Parent
-	
+
 	for _, button in pairs(screenGui:GetDescendants()) do
 		if button:IsA("TextButton") then
 			button.MouseButton1Click:Connect(function()
@@ -1771,10 +1771,6 @@ local function XAWFQ_fake_script() -- Fake Script: Workspace.SGUI.History
 					historyLabel.Text = "Animated Provoke"
 				elseif button.Name == "CheatButton" then
 					historyLabel.Text = "Toggled UI"
-				elseif button.Name == "RefreshScript" then
-					historyLabel.Text = "Clicked Refresh, Refreshing..."
-				elseif button.Name == "DestroyGUI" then
-					historyLabel.Text = "Looking forward to our next execution"
 				elseif button.Name == "ResetCharacter" then
 					historyLabel.Text = "Reset Character"
 				elseif button.Name == "TrollAudio" then
@@ -1804,152 +1800,152 @@ local function XAWFQ_fake_script() -- Fake Script: Workspace.SGUI.History
 			end)
 		end
 	end
-	
+
 end
-local function GCZUA_fake_script() -- Fake Script: Workspace.SGUI.RTOpenLootbox
-    local script = Instance.new("LocalScript")
-    script.Name = "RTOpenLootbox"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function UUVEDSW_fake_script() -- Fake Script: Workspace.SGUI.RTOpenLootbox
+	local script = Instance.new("LocalScript")
+	script.Name = "RTOpenLootbox"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local Event = game:GetService("ReplicatedStorage").Remotes.PremiumLootbox
 	Event:FireServer()
 end
-local function PNTW_fake_script() -- Fake Script: Workspace.SGUI.LoadedMessage
-    local script = Instance.new("LocalScript")
-    script.Name = "LoadedMessage"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function NDHS_fake_script() -- Fake Script: Workspace.SGUI.LoadedMessage
+	local script = Instance.new("LocalScript")
+	script.Name = "LoadedMessage"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
-	
+
 	StarterGui:SetCore("SendNotification", {
-		Title = "Modded",
-		Text = "Stop it, Slender!",
-		Duration = math.huge,
-		Button1 = "OK"
+		Title = "Stop it, Slender!",
+		Text = "Modded",
+		Duration = 10,
+		Icon = "rbxassetid://1169528749"
 	})
 end
-local function DLULZ_fake_script() -- Fake Script: Workspace.SGUI.PDaccess
-    local script = Instance.new("LocalScript")
-    script.Name = "PDaccess"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function AKEQSR_fake_script() -- Fake Script: Workspace.SGUI.PDaccess
+	local script = Instance.new("LocalScript")
+	script.Name = "PDaccess"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local plr = game.Players.LocalPlayer
-	
+
 	game.ReplicatedStorage.PD[plr.Name].active.sixth.Value = true
 	game.ReplicatedStorage.PD[plr.Name].active.stamina.Value = true
 	game.ReplicatedStorage.PD[plr.Name].active.nightvis.Value = true
 end
-local function FXJQW_fake_script() -- Fake Script: Workspace.SGUI.AutoLeaderboard
-    local script = Instance.new("LocalScript")
-    script.Name = "AutoLeaderboard"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XABR_fake_script() -- Fake Script: Workspace.SGUI.AutoLeaderboard
+	local script = Instance.new("LocalScript")
+	script.Name = "AutoLeaderboard"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
 	local leaderboard = Enum.CoreGuiType.PlayerList
 	local coreGuiType = leaderboard
-	
+
 	if coreGuiType then
 		while wait() do
 			StarterGui:SetCoreGuiEnabled(coreGuiType, true)
 		end
 	end
-	
-	
+
+
 end
-local function KVHXGEB_fake_script() -- Fake Script: Workspace.SGUI.Interfacedit
-    local script = Instance.new("LocalScript")
-    script.Name = "Interfacedit"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function BCUE_fake_script() -- Fake Script: Workspace.SGUI.Interfacedit
+	local script = Instance.new("LocalScript")
+	script.Name = "Interfacedit"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	if game:IsLoaded() then
 		game.ReplicatedStorage.UI.Citizens.CitizenIntro.Enabled = false
 		game.ReplicatedStorage.UI.Slender.SlenderIntro.Enabled = false
 		game.ReplicatedStorage.UI.Proxy.ProxyIntro.Enabled = false
 		local brws = game.ReplicatedStorage.UI.Citizens.CitizenGui:FindFirstChild("LimitY")
-	
+
 		if brws then
 			brws:Destroy()
 		end 
 	end
 end
-local function GZTEN_fake_script() -- Fake Script: Workspace.SGUI.AutoChat
-    local script = Instance.new("LocalScript")
-    script.Name = "AutoChat"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KDPHDXZ_fake_script() -- Fake Script: Workspace.SGUI.AutoChat
+	local script = Instance.new("LocalScript")
+	script.Name = "AutoChat"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
 	local chat = Enum.CoreGuiType.Chat
 	local coreGuiType2 = chat
-	
+
 	if coreGuiType2 then
-	    while wait() do
-	        StarterGui:SetCoreGuiEnabled(coreGuiType2, true)
-	    end
+		while wait() do
+			StarterGui:SetCoreGuiEnabled(coreGuiType2, true)
+		end
 	end
 end
-local function ZJUDAGV_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
-    local script = Instance.new("LocalScript")
-    script.Name = "HolderInfo"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function WOTWMT_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
+	local script = Instance.new("LocalScript")
+	script.Name = "HolderInfo"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local screenGui = script.Parent
-	
+
 	for _, v in pairs(screenGui:GetDescendants()) do
 		if v:IsA("TextButton") or v:IsA("TextLabel") or v:IsA("ImageLabel") then
 			v.MouseEnter:Connect(function()
@@ -2017,38 +2013,38 @@ local function ZJUDAGV_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
 		end
 	end
 end
-local function YIPQD_fake_script() -- Fake Script: Workspace.SGUI.HistoryLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_HistoryLabel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function BEOKKWG_fake_script() -- Fake Script: Workspace.SGUI.HistoryLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_HistoryLabel"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local textLabel = script.Parent
-	
+
 	textLabel.Changed:Connect(function()
 		task.wait(3)
 		textLabel.Text = ""
 	end)
 end
-local function SUXLRUE_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.SoundSystem
-    local script = Instance.new("LocalScript")
-    script.Name = "SoundSystem"
-    script.Parent = Converted["_CheatButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function HOXGEO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.SoundSystem
+	local script = Instance.new("LocalScript")
+	script.Name = "SoundSystem"
+	script.Parent = Converted["_CheatButton"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local aud = Instance.new("Sound", game.ReplicatedStorage)
 	aud.SoundId = "rbxassetid://101404943278256"
@@ -2056,11 +2052,11 @@ local function SUXLRUE_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 	aud.Ended:Connect(function()
 		aud:Destroy()
 	end)
-	
+
 	local function playSound(sound)
 		script.Parent[sound]:Play()
 	end
-	
+
 	for _, v in pairs(script.Parent.Parent:GetDescendants()) do
 		if v:IsA('TextButton') or v:IsA('ImageButton') then
 			v.MouseButton1Click:Connect(function()
@@ -2069,27 +2065,27 @@ local function SUXLRUE_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end
 end
-local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Animation
-    local script = Instance.new("LocalScript")
-    script.Name = "Animation"
-    script.Parent = Converted["_CheatButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function YQHSH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Animation
+	local script = Instance.new("LocalScript")
+	script.Name = "Animation"
+	script.Parent = Converted["_CheatButton"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = true
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enabled == true then
 			enabled = false
-	
+
 			script.Parent.ClipsDescendants = true
-			
+
 			script.Parent.Parent["Auto-collectPages"]:TweenPosition(
 				UDim2.new(1, -64, 0, 64),
 				Enum.EasingDirection.Out,
@@ -2097,7 +2093,7 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 				0.5,
 				true
 			)
-			
+
 			script.Parent.Parent["Auto-breakFree"]:TweenPosition(
 				UDim2.new(1, -64, 0, 112),
 				Enum.EasingDirection.Out,
@@ -2105,7 +2101,7 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 				0.5,
 				true
 			)
-			
+
 			script.Parent.Parent.Watermark:TweenPosition(
 				UDim2.new(1, -16, 0, 50), --(1, 81, 0, 50)
 				Enum.EasingDirection.Out,
@@ -2115,9 +2111,9 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 			)
 		else
 			enabled = true
-			
+
 			script.Parent.ClipsDescendants = false
-			
+
 			script.Parent.Parent["Auto-collectPages"]:TweenPosition(
 				UDim2.new(1, -241, 0, 64),
 				Enum.EasingDirection.Out,
@@ -2125,7 +2121,7 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 				0.25,
 				true
 			)
-	
+
 			script.Parent.Parent["Auto-breakFree"]:TweenPosition(
 				UDim2.new(1, -241, 0, 112),
 				Enum.EasingDirection.Out,
@@ -2133,7 +2129,7 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 				0.25,
 				true
 			)
-			
+
 			script.Parent.Parent.Watermark:TweenPosition(
 				UDim2.new(1, 80, 0, 50),
 				Enum.EasingDirection.Out,
@@ -2144,49 +2140,49 @@ local function GJSBWC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.A
 		end
 	end)
 end
-local function IRTGON_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function HXQW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local GameValues = game.ReplicatedStorage.GameValues
 	local Players = game:GetService("Players")
-	
+
 	local function checkCurrentPage()
 		script.Parent.Text = "Page (" .. GameValues.pages.Value .. ")"
 		return
 	end
-	
+
 	checkCurrentPage()
-	
+
 	GameValues.pages.Changed:Connect(checkCurrentPage)
 end
-local function IIKRQNU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Page"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function BBST_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Page"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local function createGuiPages(parent)
 		local function mathfloor(var)
 			return math.floor((workspace.CurrentCamera.CFrame.Position - var.CFrame.Position).magnitude)
 		end
-	
+
 		local BGui = Instance.new("BillboardGui")
 		BGui.Parent = parent
 		BGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -2194,7 +2190,7 @@ local function IIKRQNU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		BGui.AlwaysOnTop = true
 		BGui.LightInfluence = 1.000
 		BGui.Size = UDim2.new(0, 100, 0, 40)
-	
+
 		local text = Instance.new("TextLabel")
 		text.Parent = BGui
 		text.BackgroundTransparency = 1.000
@@ -2207,7 +2203,7 @@ local function IIKRQNU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		text.TextStrokeTransparency = 0.000
 		text.TextWrapped = true
 		text.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 		local distance = Instance.new("TextLabel")
 		distance.Name = "Distance"
 		distance.Parent = BGui
@@ -2222,18 +2218,18 @@ local function IIKRQNU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		distance.TextStrokeTransparency = 0.000
 		distance.TextWrapped = true
 		distance.TextYAlignment = Enum.TextYAlignment.Bottom
-	
+
 		local function updateDistance()
 			while wait() do
 				distance.Text = mathfloor(parent) .. ""
 			end
 		end
-	
+
 		if parent.Transparency == 0 then
 			spawn(updateDistance)
 		end
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if game.Workspace.MAP.Pages ~= nil and game.Workspace.MAP.HPageSpawns ~= nil then
 			local model1 = game.Workspace.MAP.Pages
@@ -2259,18 +2255,18 @@ local function IIKRQNU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end)
 end
-local function SDDZBDC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Generator.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Generator"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KJUFZ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Generator.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Generator"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local function createGuiGens(parent)
 		local BGui = Instance.new("BillboardGui")
@@ -2279,7 +2275,7 @@ local function SDDZBDC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		BGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 		BGui.StudsOffset = Vector3.new(0, 3, 0)
 		BGui.Size = UDim2.new(0, 90, 0, 30)
-	
+
 		local text = Instance.new("TextLabel")
 		text.Parent = BGui
 		text.TextScaled = true
@@ -2288,7 +2284,7 @@ local function SDDZBDC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		text.TextColor3 = Color3.fromRGB(113, 213, 239)
 		text.Text = "Generator"
 		text.TextStrokeTransparency = 0
-	
+
 		if parent:FindFirstChild("On") then
 			if parent.On.Value == true then
 				text.Text = "Generator (Activated)"
@@ -2296,14 +2292,14 @@ local function SDDZBDC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 			end
 		end
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		for _, v in pairs(workspace.MAP.GENS:GetChildren()) do
 			createGuiGens(v)
-	
+
 			if v:FindFirstChild("On") then
 				local isOn = v.On
-	
+
 				isOn.Changed:Connect(function()
 					v.BillboardGui.TextLabel.Text = "Generator (Activated)"
 					v.BillboardGui.TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
@@ -2312,22 +2308,22 @@ local function SDDZBDC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end)
 end
-local function RSMSY_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel2"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function EWTTBZK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel2"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local GameValues = game.ReplicatedStorage.GameValues
 	local Players = game:GetService("Players")
-	
+
 	local function checkPlayerUsername()
 		local lastSlenderUsername = GameValues.lastslender.Value
 		for _, player in Players:GetPlayers() do
@@ -2337,34 +2333,34 @@ local function RSMSY_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 			end
 		end
 	end
-	
+
 	checkPlayerUsername()
-	
+
 	GameValues.lastslender.Changed:Connect(checkPlayerUsername)
 end
-local function BGHK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Slender"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function WPNH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Slender"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
 		local slndr = game.ReplicatedStorage.GameValues.lastslender
-	
+
 		ESP.Tracers = true
 		ESP.Players = false
 		ESP.Names = true
 		ESP.Boxes = false
 		ESP:Toggle(true)
-	
+
 		for x, v in pairs(workspace:GetChildren()) do 
 			if slndr.Value == v.Name then
 				ESP:AddObjectListener(v, {
@@ -2375,25 +2371,25 @@ local function BGHK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 				})
 			end
 		end
-	
+
 		ESP.slender = true
 	end)
 end
-local function YFJBWKU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.NextPage.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_NextPage"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function LTVJRFG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.NextPage.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_NextPage"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enabled == false then
 			enabled = true
@@ -2404,24 +2400,24 @@ local function YFJBWKU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 			script.Parent.Text = "V"
 			script.Parent.Parent.Parent.ExtraButtonsHolder2.Visible = false
 		end
-		
+
 	end)
 end
-local function NVUCQSF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.FullBright.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_FullBright"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function JADX_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.FullBright.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_FullBright"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local Lighting = game.Lighting
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		Lighting.Brightness = 2
 		Lighting.ClockTime = 0
@@ -2430,24 +2426,24 @@ local function NVUCQSF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 	end)
 end
-local function MUHA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Immune.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Immune"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ZLEQX_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Immune.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Immune"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
-	
+
 	script.Parent.MouseButton1Click:Connect(function()	
 		local LOL = game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("CitizenGui"):FindFirstChild("Static"):FindFirstChild("looking")
-	
+
 		if LOL then
 			LOL:Destroy()
 		else
@@ -2459,18 +2455,18 @@ local function MUHA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function VQMXOMR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.CollectGifts.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_CollectGifts"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function FNZUH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.CollectGifts.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_CollectGifts"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
 	local enabled = false
@@ -2478,11 +2474,13 @@ local function VQMXOMR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 	local plr = game.Players.LocalPlayer
 	local char = plr.Character or plr.CharacterAdded:Wait()
 	local humanoid = char:WaitForChild("Humanoid")
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enabled == false then
 			enabled = true
-			
+
+			script.Parent.Parent.Parent.Parent.Parent.ACGStatus.TextColor3 = Color3.new(0,1,0)
+
 			for x, y in ipairs(workspace.Gifts:GetChildren()) do
 				if y.Name == "Gift" then
 					local torso = char:FindFirstChild("UpperTorso")
@@ -2491,7 +2489,7 @@ local function VQMXOMR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 					end
 				end
 			end
-	
+
 			connection = workspace.Gifts.ChildAdded:Connect(function(desc)
 				if desc.Name == "Gift" then
 					local head = char:FindFirstChild("Head")
@@ -2502,63 +2500,65 @@ local function VQMXOMR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 			end)
 		else
 			enabled = false
-			
+
+			script.Parent.Parent.Parent.Parent.Parent.ACGStatus.TextColor3 = Color3.new(1, 0, 0)
+
 			if connection then
 				connection:Disconnect()
 			end
 		end
 	end)
 end
-local function OIXWJL_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.SpeedHack.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_SpeedHack"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function TUGINZC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.SpeedHack.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_SpeedHack"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enable = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enable == false then
 			enable = true
-	
+
 			repeat
 				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 21
 				task.wait()
 			until enable == false
 		else
 			enable = false
-	
+
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 14
 		end
 	end)
 end
-local function YWTEDHT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Trip.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Trip"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function FNAY_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Trip.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Trip"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	speaker = game.Players.LocalPlayer
-	
+
 	function getRoot(char)
 		local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
 		return rootPart
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if speaker and speaker.Character and speaker.Character:FindFirstChildOfClass("Humanoid") and getRoot(speaker.Character) then
 			local hum = speaker.Character:FindFirstChildOfClass("Humanoid")
@@ -2567,22 +2567,22 @@ local function YWTEDHT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end)
 end
-local function LAHHICQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Laugh.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Laugh"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function BIBWA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Laugh.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Laugh"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local TextChatService = game:GetService("TextChatService")
 	local isLegacyChat = TextChatService.ChatVersion == Enum.ChatVersion.LegacyChatService
-	
+
 	local function chatMessage(str)
 		str = tostring(str)
 		if not isLegacyChat then
@@ -2591,124 +2591,108 @@ local function LAHHICQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
 		end
 	end
-	
+
 	local textButton = script.Parent
 	local laughaud = script.Parent.Parent.Parent.Parent.Parent.laugh
-	
+
 	local function onButtonClick()
 		laughaud:Play()
 		chatMessage("/e laugh")
 	end
-	
+
 	textButton.MouseButton1Click:Connect(onButtonClick)
 end
-local function WAWLUVU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.DestroyGUI.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_DestroyGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local tb = script.Parent
-	local gp = tb.Parent.Parent.Parent.Parent.Parent
-	local p1 = gp.ABFStatus
-	local p2 = gp.PWFStatus
-	local p3 = gp.ACGStatus
-	local wg = gp.SuperWarningDGRS
-	
-	local function isGreen(label)
-		local color = label.TextColor3
-		local tolerance = 0.01
-		return math.abs(color.R - 0) < tolerance 
-			and math.abs(color.G - 1) < tolerance 
-			and math.abs(color.B - 0) < tolerance
-	end
-	
-	tb.MouseButton1Click:Connect(function()
-		if isGreen(p1) or isGreen(p2) or isGreen(p3) then
-			wg.Visible = true
-		else
-			task.wait(2)
-			gp:Destroy()
+local function LTOG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.DestroyGUI.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_DestroyGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
 		end
+		return req(obj)
+	end
+
+	local textButton = script.Parent
+	local problem1 = script.Parent.Parent.Parent.Parent.Parent.ABFStatus 
+	local problem2 = script.Parent.Parent.Parent.Parent.Parent.PWFStatus 
+	local problem3 = script.Parent.Parent.Parent.Parent.Parent.ACGStatus
+
+	textButton.MouseButton1Click:Connect(function() 
+		if problem1.TextColor3 == Color3.new(0, 1, 0) 
+			or problem2.TextColor3 == Color3.new(0, 1, 0) 
+			or problem3.TextColor3 == Color3.new(0, 1, 0) 
+		then 
+			script.Parent.Parent.Parent.Parent.Parent.SuperWarningDGRS.Visible = true 
+		else 
+			task.wait(2) 
+			script.Parent.Parent.Parent.Parent.Parent:Destroy() 
+		end 
 	end)
-	
 end
-local function BQPBUWA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.ResetCharacter.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_ResetCharacter"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function HIWLPQZ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.ResetCharacter.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_ResetCharacter"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-local function MHALHA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.RefreshScript.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_RefreshScript"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local tb = script.Parent
-	local gp = tb.Parent.Parent.Parent.Parent.Parent
-	local p1 = gp.ABFStatus
-	local p2 = gp.PWFStatus
-	local p3 = gp.ACGStatus
-	local wg = gp.SuperWarningDGRS
-	
-	local function isGreen(label)
-		local color = label.TextColor3
-		local tolerance = 0.01
-		return math.abs(color.R - 0) < tolerance 
-			and math.abs(color.G - 1) < tolerance 
-			and math.abs(color.B - 0) < tolerance
-	end
-	
-	tb.MouseButton1Click:Connect(function()
-		if isGreen(p1) or isGreen(p2) or isGreen(p3) then
-			wg.Visible = true
-		else
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisIsHowLoveFeelsLike/fictional-octo-fishstick/main/source"))()
+local function TDVLAO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.RefreshScript.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_RefreshScript"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
 		end
+		return req(obj)
+	end
+
+	local textButton = script.Parent
+	local problem1 = script.Parent.Parent.Parent.Parent.Parent.ABFStatus
+	local problem2 = script.Parent.Parent.Parent.Parent.Parent.PWFStatus 
+	local problem3 = script.Parent.Parent.Parent.Parent.Parent.ACGStatus
+
+	textButton.MouseButton1Click:Connect(function() 
+		if problem1.TextColor3 == Color3.new(0, 1, 0) 
+			or problem2.TextColor3 == Color3.new(0, 1, 0) 
+			or problem3.TextColor3 == Color3.new(0, 1, 0) 
+		then 
+			script.Parent.Parent.Parent.Parent.Parent.SuperWarningDGRS.Visible = true 
+		else 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisIsHowLoveFeelsLike/fictional-octo-fishstick/main/source"))()
+		end 
 	end)
-	
 end
-local function DNHQULI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Proxy.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Proxy"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function MVXHOFO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Proxy.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Proxy"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local StarterGui = game:GetService("StarterGui")
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		StarterGui:SetCore("SendNotification", {
 			Title = "'Show Proxy'",
@@ -2718,45 +2702,45 @@ local function DNHQULI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		})
 	end)
 end
-local function NEEG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Info.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Info"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ACZDYV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Info.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Info"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enabled == false then
 			enabled = true
-			
+
 			script.Parent.Parent.Parent.SuperInfo.Visible = true
 		else
 			enabled = false
-			
+
 			script.Parent.Parent.Parent.SuperInfo.Visible = false
 		end
 	end)
 end
-local function GMGG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.TrollAudio.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TrollAudio"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XHDREO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.TrollAudio.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TrollAudio"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
 	local PlayAllSounds = function()
@@ -2766,15 +2750,15 @@ local function GMGG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 			end
 		end
 	end
-	
+
 	script.Parent.MouseButton1Click:Connect(function()	
 		if enabled == false then
 			enabled = true
-	
+
 			PlayAllSounds()
 		else
 			enabled = false
-	
+
 			for _, sound in next, game:GetDescendants() do
 				if sound:IsA("Sound") then
 					sound.Playing = false
@@ -2783,24 +2767,24 @@ local function GMGG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function QLPXV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.PlayWithFlashlight.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_PlayWithFlashlight"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function IRPO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.PlayWithFlashlight.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_PlayWithFlashlight"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		enabled = not enabled
-	
+
 		if enabled then
 			script.Parent.Parent.Parent.Parent.Parent.PWFStatus.TextColor3 = Color3.new(0,1,0)
 			task.spawn(function()
@@ -2814,46 +2798,46 @@ local function QLPXV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 		end
 	end)
 end
-local function BBAO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.UIStroke.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_UIStroke20"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XWJEZ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.UIStroke.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_UIStroke20"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local RunService = game:GetService("RunService")
-	
+
 	local hue = 0
-	
+
 	RunService.Heartbeat:Connect(function(deltaTime)
 		hue = (hue + deltaTime * 0.2) % 1
 		script.Parent.Color = Color3.fromHSV(hue, 1, 1)
 	end)
 end
-local function YRLNLO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_OpenCreepstuLab"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function UWEBG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_OpenCreepstuLab"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-		
+
 		if ena then
 			script.Parent.Parent.Parent.Parent.Parent.CreepstuLab.Visible = true
 		else
@@ -2861,22 +2845,22 @@ local function YRLNLO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 		end	
 	end)
 end
-local function RAHQHFG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhoIsSlender.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_WhoIsSlender"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XFAU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhoIsSlender.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_WhoIsSlender"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local GameValues = game.ReplicatedStorage.GameValues
 	local Players = game:GetService("Players")
-	
+
 	local function checkPlayerUsername()
 		local lastSlenderUsername = GameValues.lastslender.Value
 		for _, player in Players:GetPlayers() do
@@ -2886,82 +2870,82 @@ local function RAHQHFG_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 			end
 		end
 	end
-	
+
 	checkPlayerUsername()
-	
+
 	GameValues.lastslender.Changed:Connect(checkPlayerUsername)
 end
-local function UFHZC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Pages.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Pages"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function FUFDBM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Pages.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Pages"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local Players = game.Players.LocalPlayer
 	local tha = Players.leaderstats["Total Pages"]
-	
+
 	local function checkPage()
 		script.Parent.Text = "Total Pages: " .. tha.Value
 		return
 	end
-	
+
 	checkPage()
-	
+
 	tha.Changed:Connect(checkPage)
 end
-local function EESPO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Versi0n.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Versi0n"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function RDTMGN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Versi0n.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Versi0n"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.Text = "Mod Version: " .. ver
 end
-local function OKJBB_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.AccountAge.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_AccountAge"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KOHEMC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.AccountAge.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_AccountAge"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local player = game.Players.LocalPlayer
-	
+
 	while task.wait() do
 		script.Parent.Text = "Your Account Age: " .. player.AccountAge
 	end
 end
-local function RGOREPQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhatIsTheNextMap.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_WhatIsTheNextMap"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ECKEF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhatIsTheNextMap.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_WhatIsTheNextMap"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local nameMap = {
 		Asylum = "Asylum",
@@ -2976,9 +2960,9 @@ local function RGOREPQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		Mall = "Abandoned Mall",
 		b = "Ocean Liner"
 	}
-	
+
 	local map = workspace:FindFirstChild("MAP")
-	
+
 	if map then
 		while task.wait(.1) do
 			for _, v in ipairs(map:GetChildren()) do
@@ -2989,74 +2973,74 @@ local function RGOREPQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end
 end
-local function MMTE_fake_script() -- Fake Script: Workspace.SGUI.Noticer.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Noticer"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KWOU_fake_script() -- Fake Script: Workspace.SGUI.Noticer.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Noticer"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local textLabel = script.Parent
-	
+
 	textLabel.Changed:Connect(function()
 		task.wait(3)
 		textLabel.Visible = false
 	end)
 end
-local function DXAS_fake_script() -- Fake Script: Workspace.SGUI.InfoTeller.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_InfoTeller"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function VCUE_fake_script() -- Fake Script: Workspace.SGUI.InfoTeller.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_InfoTeller"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Text = ""
 	end)
 end
-local function VJNBKU_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
-    local script = Instance.new("LocalScript")
-    script.Name = "UsersOnJoin"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function DUBLA_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
+	local script = Instance.new("LocalScript")
+	script.Name = "UsersOnJoin"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local screenGui = script.Parent
 	local noticerLabel = screenGui:FindFirstChild("Noticer")
-	
+
 	game.Players.PlayerAdded:Connect(function(player)
 		local leaderstats = player:WaitForChild("leaderstats")
-	
+
 		for _, stat in ipairs(leaderstats:GetChildren()) do
 			if stat:IsA("NumberValue") or stat:IsA("IntValue") then
-	
+
 				stat:GetPropertyChangedSignal("Value"):Wait()
-	
+
 				noticerLabel.Visible = true
 				noticerLabel.TextColor3 = Color3.fromRGB(0, 170, 0)
 				noticerLabel.Text = player.Name .. " has joined (" .. stat.Value .. ")"
 			end
 		end
 	end)
-	
+
 	game.Players.PlayerRemoving:Connect(function(player)
 		local leaderstats = player:FindFirstChild("leaderstats")
 		if leaderstats then
@@ -3069,48 +3053,48 @@ local function VJNBKU_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
 			end
 		end
 	end)
-	
-	
+
+
 end
-local function PCMEZ_fake_script() -- Fake Script: Workspace.SGUI.SuperDisclaimer.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_SuperDisclaimer"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function MJOBEJ_fake_script() -- Fake Script: Workspace.SGUI.SuperDisclaimer.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_SuperDisclaimer"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if enabled == false then
 			enabled = true
-			
+
 			script.Parent.Parent.Frame.Visible = true
 		else
 			enabled = false
-			
+
 			script.Parent.Parent.Frame.Visible = false
 		end
 	end)
 end
-local function LNCA_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel3"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function NHRXEUK_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel3"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.Text = [[
 	those button outline colors are based on medical guidelines (about your eyes), whether you like it or not.
@@ -3151,39 +3135,39 @@ local function LNCA_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabel
 	this cheat is not open-source because I feel like Kinnis has seen the raw script and patched the PoopEgg feature. you have to DM me on WhatsApp to get the open-source version: +60 13-503 6056.
 	]]
 end
-local function OMWZZZG_fake_script() -- Fake Script: Workspace.SGUI.Auto-collectPages.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Auto-collectPages"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XOROUY_fake_script() -- Fake Script: Workspace.SGUI.Auto-collectPages.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Auto-collectPages"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.SuperWarningACP.Visible = true
 		script.Parent.Visible = false
 	end)
 end
-local function OIMX_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Main
-    local script = Instance.new("LocalScript")
-    script.Name = "Main"
-    script.Parent = Converted["_SlenderVisibility"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function SAWWX_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Main
+	local script = Instance.new("LocalScript")
+	script.Name = "Main"
+	script.Parent = Converted["_SlenderVisibility"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local gameValues = game.ReplicatedStorage.GameValues.slendervisible
-	
+
 	local function checkvalue()
 		if gameValues.Value == true then
 			script.Parent.Image = "rbxassetid://152007538"
@@ -3193,29 +3177,29 @@ local function OIMX_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibili
 			script.Parent.ImageColor3 = Color3.new(1, 0, 0)
 		end
 	end
-	
+
 	checkvalue()
-	
+
 	gameValues.Changed:Connect(checkvalue)
 end
-local function UFAVP_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.AnnoyingVisibility
-    local script = Instance.new("LocalScript")
-    script.Name = "AnnoyingVisibility"
-    script.Parent = Converted["_SlenderVisibility"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XXIXAQJ_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.AnnoyingVisibility
+	local script = Instance.new("LocalScript")
+	script.Name = "AnnoyingVisibility"
+	script.Parent = Converted["_SlenderVisibility"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = true
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		enabled = not enabled
-		
+
 		if enabled then
 			script.Parent.ImageTransparency = 1
 		else
@@ -3223,21 +3207,21 @@ local function UFAVP_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibil
 		end
 	end)
 end
-local function KEJVFY_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Availability
-    local script = Instance.new("LocalScript")
-    script.Name = "Availability"
-    script.Parent = Converted["_SlenderVisibility"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function BFKR_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Availability
+	local script = Instance.new("LocalScript")
+	script.Name = "Availability"
+	script.Parent = Converted["_SlenderVisibility"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local gameValues = game.ReplicatedStorage.GameValues.gameactive
-	
+
 	local function checkvalue()
 		if gameValues.Value == true then
 			script.Parent.Visible = true
@@ -3245,29 +3229,29 @@ local function KEJVFY_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibi
 			script.Parent.Visible = false
 		end
 	end
-	
+
 	checkvalue()
-	
+
 	gameValues.Changed:Connect(checkvalue)
 end
-local function MPNOK_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Auto-breakFree"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ARLMDE_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Auto-breakFree"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local enabled = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		enabled = not enabled
-	
+
 		if enabled then
 			script.Parent.Parent.ABFStatus.TextColor3 = Color3.new(0,1,0)
 			task.spawn(function()
@@ -3280,39 +3264,39 @@ local function MPNOK_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree
 			script.Parent.Parent.ABFStatus.TextColor3 = Color3.new(1, 0, 0)
 		end
 	end)
-	
+
 end
-local function NKYESI_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel5"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KXXJJ_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel5"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local textLabel = script.Parent
-	
+
 	textLabel.Text = [[
 	[Red Flag]
 	Are you sure?]]
 end
-local function WXFPS_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.Yes.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Yes"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ARMXEW_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.Yes.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Yes"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local v1 = workspace
@@ -3321,7 +3305,7 @@ local function WXFPS_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningAC
 		local v4 = v3:WaitForChild("Pages")
 		local v5 = v3:WaitForChild("HPageSpawns")
 		local v6 = v2.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-	
+
 		local function mTTP(pL)
 			for _, x in pairs(pL:GetChildren()) do
 				if x:IsA("Part") and x.Transparency == 0 then
@@ -3332,44 +3316,44 @@ local function WXFPS_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningAC
 				end
 			end
 		end
-	
+
 		mTTP(v4)
 		mTTP(v5)
 	end)
 end
-local function QUUVN_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.No.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_No"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function WJEO_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.No.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_No"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.SuperWarningACP.Visible = false
 		script.Parent.Parent.Parent["Auto-collectPages"].Visible = true
 	end)
 end
-local function RRRMOOE_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.ifyellow
-    local script = Instance.new("LocalScript")
-    script.Name = "ifyellow"
-    script.Parent = Converted["_SlenderVisibilityptii"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function NRHFQZY_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.ifyellow
+	local script = Instance.new("LocalScript")
+	script.Name = "ifyellow"
+	script.Parent = Converted["_SlenderVisibilityptii"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	task.wait(3)
-	
+
 	repeat
 		script.Parent.Text = ""
 		task.wait(.1)
@@ -3377,21 +3361,21 @@ local function RRRMOOE_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisib
 		task.wait(.1)
 	until script.Enabled == false
 end
-local function IZTAMTW_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Main
-    local script = Instance.new("LocalScript")
-    script.Name = "Main"
-    script.Parent = Converted["_SlenderVisibilityptii"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function KUFP_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Main
+	local script = Instance.new("LocalScript")
+	script.Name = "Main"
+	script.Parent = Converted["_SlenderVisibilityptii"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local gameValues = game.ReplicatedStorage.GameValues.slendervisible
-	
+
 	local function checkvalue()
 		if gameValues.Value == false then
 			script.Parent.Text = "Run Away!"
@@ -3403,26 +3387,26 @@ local function IZTAMTW_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisib
 			script.Parent.ifyellow.Enabled = true
 		end
 	end
-	
+
 	checkvalue()
-	
+
 	gameValues.Changed:Connect(checkvalue)
 end
-local function VPPBZ_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Availability
-    local script = Instance.new("LocalScript")
-    script.Name = "Availability"
-    script.Parent = Converted["_SlenderVisibilityptii"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function PBPRVQ_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Availability
+	local script = Instance.new("LocalScript")
+	script.Name = "Availability"
+	script.Parent = Converted["_SlenderVisibilityptii"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local gameValues = game.ReplicatedStorage.GameValues.gameactive
-	
+
 	local function checkvalue()
 		if gameValues.Value == true then
 			script.Parent.Visible = true
@@ -3430,65 +3414,65 @@ local function VPPBZ_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibil
 			script.Parent.Visible = false
 		end
 	end
-	
+
 	checkvalue()
-	
+
 	gameValues.Changed:Connect(checkvalue)
 end
-local function QVZTIP_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.TextLabel.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextLabel7"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function SDWR_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel7"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local textLabel = script.Parent
-	
+
 	textLabel.Text = [[
 	Make sure turn off all green toggles before destroying or refreshing this cheat]]
-	
+
 end
-local function TEYGDG_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.Ok.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Ok"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function NPSUY_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.Ok.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Ok"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-local function EOZN_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Header.Settings.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Settings"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function HBSA_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Header.Settings.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Settings"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-		
+
 		if ena then
 			script.Parent.Parent.Parent.MainFrame.Visible = false
 			script.Parent.Parent.Parent.SettingFrame.Visible = true
@@ -3498,27 +3482,27 @@ local function EOZN_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Hea
 		end
 	end)
 end
-local function NYOOVV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.QIaV.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_QIaV"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function GMKTTY_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.QIaV.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_QIaV"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-		
+
 		if ena then
 			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 195)
-			
+
 			repeat
 				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
 				task.wait(.1)
@@ -3528,27 +3512,27 @@ local function NYOOVV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.M
 		end
 	end)
 end
-local function FNGYOQ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.DGF.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_DGF"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ARAXCL_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.DGF.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_DGF"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-	
+
 		if ena then
 			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 195)
-	
+
 			repeat
 				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
 				task.wait(.1)
@@ -3558,27 +3542,27 @@ local function FNGYOQ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.M
 		end
 	end)
 end
-local function BNLRAV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.OG.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_OG"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function XEIAGX_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.OG.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_OG"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-		
+
 		if ena then
 			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 199)
-			
+
 			repeat
 				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
 				task.wait(.1)
@@ -3588,37 +3572,37 @@ local function BNLRAV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.M
 		end
 	end)
 end
-local function KKSQM_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Audibly.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Audibly"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function JTFMUUR_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Audibly.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Audibly"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.TextColor3 = Color3.new(1, 1, 1)
-		script.Parent.Parent.Audibly.TextColor3 = Color3.new(0, 1, 0)
+		script.Parent.TextColor3 = Color3.new(0, 1, 0)
+		script.Parent.Parent.Silently.TextColor3 = Color3.new(1, 1, 1)
 		script.Parent.Parent.Parent.MainFrame.AudibleOrSilent.Value = false
 	end)
 end
-local function QEIZBK_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Silently.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Silently"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function FPJM_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Silently.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_Silently"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.TextColor3 = Color3.new(0, 1, 0)
@@ -3626,154 +3610,151 @@ local function QEIZBK_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.S
 		script.Parent.Parent.Parent.MainFrame.AudibleOrSilent.Value = true
 	end)
 end
-local function OEKTT_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.one.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_one"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function LSTM_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.one.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_one"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-	
+
 		if ena then
 			script.Parent.TextColor3 = Color3.new(0, 1, 0)
-			script.Parent.Parent.two.TextColor3 = Color3.new(1,1,1)
 			script.Parent.Parent.Parent.MainFrame.firstmethod.Value = true
 		else
 			script.Parent.TextColor3 = Color3.new(1, 1, 1)
-			script.Parent.Parent.two.TextColor3 = Color3.new(1,1,1)
 			script.Parent.Parent.Parent.MainFrame.firstmethod.Value = false
 		end
 	end)
 end
-local function AEMJD_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.two.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_two"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function LLDCG_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.two.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_two"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local ena = false
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		ena = not ena
-	
+
 		if ena then
-			script.Parent.TextColor3 = Color3.new(1, 1, 1)
-			script.Parent.Parent.two.TextColor3 = Color3.new(0, 1, 0)
+			script.Parent.TextColor3 = Color3.new(0, 1, 0)
 			script.Parent.Parent.Parent.MainFrame.secondmethod.Value = true
 		else
 			script.Parent.TextColor3 = Color3.new(1, 1, 1)
-			script.Parent.Parent.two.TextColor3 = Color3.new(1,1,1)
 			script.Parent.Parent.Parent.MainFrame.secondmethod.Value = false
 		end
 	end)
 end
-local function PQRU_fake_script() -- Fake Script: Workspace.SGUI.QuickAbilities
-    local script = Instance.new("LocalScript")
-    script.Name = "QuickAbilities"
-    script.Parent = Converted["_SGUI"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+local function ZCGGAT_fake_script() -- Fake Script: Workspace.SGUI.QuickAbilities
+	local script = Instance.new("LocalScript")
+	script.Name = "QuickAbilities"
+	script.Parent = Converted["_SGUI"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local gameValues = game.ReplicatedStorage.GameValues.gameactive
-	
+
 	local function checkvalue()
 		if gameValues.Value == true then
 			repeat
 				game:GetService("Players").LocalPlayer.PlayerGui.SlenderGui.Abilities.Teleport.teleport.Visible = true
 				game:GetService("Players").LocalPlayer.PlayerGui.SlenderGui.Abilities.grab.grab.Visible = true
+				task.wait(.1)
 			until gameValues.Value == false
 		end
 	end
-	
+
 	checkvalue()
-	
+
 	gameValues.Changed:Connect(checkvalue)
 end
 
-coroutine.wrap(XAWFQ_fake_script)()
-coroutine.wrap(GCZUA_fake_script)()
-coroutine.wrap(PNTW_fake_script)()
-coroutine.wrap(DLULZ_fake_script)()
-coroutine.wrap(FXJQW_fake_script)()
-coroutine.wrap(KVHXGEB_fake_script)()
-coroutine.wrap(GZTEN_fake_script)()
-coroutine.wrap(ZJUDAGV_fake_script)()
-coroutine.wrap(YIPQD_fake_script)()
-coroutine.wrap(SUXLRUE_fake_script)()
-coroutine.wrap(GJSBWC_fake_script)()
-coroutine.wrap(IRTGON_fake_script)()
-coroutine.wrap(IIKRQNU_fake_script)()
-coroutine.wrap(SDDZBDC_fake_script)()
-coroutine.wrap(RSMSY_fake_script)()
-coroutine.wrap(BGHK_fake_script)()
-coroutine.wrap(YFJBWKU_fake_script)()
-coroutine.wrap(NVUCQSF_fake_script)()
-coroutine.wrap(MUHA_fake_script)()
-coroutine.wrap(VQMXOMR_fake_script)()
-coroutine.wrap(OIXWJL_fake_script)()
-coroutine.wrap(YWTEDHT_fake_script)()
-coroutine.wrap(LAHHICQ_fake_script)()
-coroutine.wrap(WAWLUVU_fake_script)()
-coroutine.wrap(BQPBUWA_fake_script)()
-coroutine.wrap(MHALHA_fake_script)()
-coroutine.wrap(DNHQULI_fake_script)()
-coroutine.wrap(NEEG_fake_script)()
-coroutine.wrap(GMGG_fake_script)()
-coroutine.wrap(QLPXV_fake_script)()
-coroutine.wrap(BBAO_fake_script)()
-coroutine.wrap(YRLNLO_fake_script)()
-coroutine.wrap(RAHQHFG_fake_script)()
-coroutine.wrap(UFHZC_fake_script)()
-coroutine.wrap(EESPO_fake_script)()
-coroutine.wrap(OKJBB_fake_script)()
-coroutine.wrap(RGOREPQ_fake_script)()
-coroutine.wrap(MMTE_fake_script)()
-coroutine.wrap(DXAS_fake_script)()
-coroutine.wrap(VJNBKU_fake_script)()
-coroutine.wrap(PCMEZ_fake_script)()
-coroutine.wrap(LNCA_fake_script)()
-coroutine.wrap(OMWZZZG_fake_script)()
-coroutine.wrap(OIMX_fake_script)()
-coroutine.wrap(UFAVP_fake_script)()
-coroutine.wrap(KEJVFY_fake_script)()
-coroutine.wrap(MPNOK_fake_script)()
-coroutine.wrap(NKYESI_fake_script)()
-coroutine.wrap(WXFPS_fake_script)()
-coroutine.wrap(QUUVN_fake_script)()
-coroutine.wrap(RRRMOOE_fake_script)()
-coroutine.wrap(IZTAMTW_fake_script)()
-coroutine.wrap(VPPBZ_fake_script)()
-coroutine.wrap(QVZTIP_fake_script)()
-coroutine.wrap(TEYGDG_fake_script)()
-coroutine.wrap(EOZN_fake_script)()
-coroutine.wrap(NYOOVV_fake_script)()
-coroutine.wrap(FNGYOQ_fake_script)()
-coroutine.wrap(BNLRAV_fake_script)()
-coroutine.wrap(KKSQM_fake_script)()
-coroutine.wrap(QEIZBK_fake_script)()
-coroutine.wrap(OEKTT_fake_script)()
-coroutine.wrap(AEMJD_fake_script)()
-coroutine.wrap(PQRU_fake_script)()
+coroutine.wrap(KXPXBC_fake_script)()
+coroutine.wrap(UUVEDSW_fake_script)()
+coroutine.wrap(NDHS_fake_script)()
+coroutine.wrap(AKEQSR_fake_script)()
+coroutine.wrap(XABR_fake_script)()
+coroutine.wrap(BCUE_fake_script)()
+coroutine.wrap(KDPHDXZ_fake_script)()
+coroutine.wrap(WOTWMT_fake_script)()
+coroutine.wrap(BEOKKWG_fake_script)()
+coroutine.wrap(HOXGEO_fake_script)()
+coroutine.wrap(YQHSH_fake_script)()
+coroutine.wrap(HXQW_fake_script)()
+coroutine.wrap(BBST_fake_script)()
+coroutine.wrap(KJUFZ_fake_script)()
+coroutine.wrap(EWTTBZK_fake_script)()
+coroutine.wrap(WPNH_fake_script)()
+coroutine.wrap(LTVJRFG_fake_script)()
+coroutine.wrap(JADX_fake_script)()
+coroutine.wrap(ZLEQX_fake_script)()
+coroutine.wrap(FNZUH_fake_script)()
+coroutine.wrap(TUGINZC_fake_script)()
+coroutine.wrap(FNAY_fake_script)()
+coroutine.wrap(BIBWA_fake_script)()
+coroutine.wrap(LTOG_fake_script)()
+coroutine.wrap(HIWLPQZ_fake_script)()
+coroutine.wrap(TDVLAO_fake_script)()
+coroutine.wrap(MVXHOFO_fake_script)()
+coroutine.wrap(ACZDYV_fake_script)()
+coroutine.wrap(XHDREO_fake_script)()
+coroutine.wrap(IRPO_fake_script)()
+coroutine.wrap(XWJEZ_fake_script)()
+coroutine.wrap(UWEBG_fake_script)()
+coroutine.wrap(XFAU_fake_script)()
+coroutine.wrap(FUFDBM_fake_script)()
+coroutine.wrap(RDTMGN_fake_script)()
+coroutine.wrap(KOHEMC_fake_script)()
+coroutine.wrap(ECKEF_fake_script)()
+coroutine.wrap(KWOU_fake_script)()
+coroutine.wrap(VCUE_fake_script)()
+coroutine.wrap(DUBLA_fake_script)()
+coroutine.wrap(MJOBEJ_fake_script)()
+coroutine.wrap(NHRXEUK_fake_script)()
+coroutine.wrap(XOROUY_fake_script)()
+coroutine.wrap(SAWWX_fake_script)()
+coroutine.wrap(XXIXAQJ_fake_script)()
+coroutine.wrap(BFKR_fake_script)()
+coroutine.wrap(ARLMDE_fake_script)()
+coroutine.wrap(KXXJJ_fake_script)()
+coroutine.wrap(ARMXEW_fake_script)()
+coroutine.wrap(WJEO_fake_script)()
+coroutine.wrap(NRHFQZY_fake_script)()
+coroutine.wrap(KUFP_fake_script)()
+coroutine.wrap(PBPRVQ_fake_script)()
+coroutine.wrap(SDWR_fake_script)()
+coroutine.wrap(NPSUY_fake_script)()
+coroutine.wrap(HBSA_fake_script)()
+coroutine.wrap(GMKTTY_fake_script)()
+coroutine.wrap(ARAXCL_fake_script)()
+coroutine.wrap(XEIAGX_fake_script)()
+coroutine.wrap(JTFMUUR_fake_script)()
+coroutine.wrap(FPJM_fake_script)()
+coroutine.wrap(LSTM_fake_script)()
+coroutine.wrap(LLDCG_fake_script)()
+coroutine.wrap(ZCGGAT_fake_script)()
