@@ -3,7 +3,7 @@ if fsgui then
 	fsgui:Destroy()
 end
 
-local ver = "9.9"
+local ver = "10.0"
 
 local Converted = {
 	["_SGUI"] = Instance.new("ScreenGui");
@@ -234,35 +234,41 @@ local Converted = {
 	["_DropShadow2"] = Instance.new("ImageLabel");
 	["_Header"] = Instance.new("TextLabel");
 	["_UITextSizeConstraint33"] = Instance.new("UITextSizeConstraint");
-	["_Settings"] = Instance.new("ImageButton");
-	["_LocalScript38"] = Instance.new("LocalScript");
-	["_MainFrame"] = Instance.new("ScrollingFrame");
+	["_Tabs"] = Instance.new("ScrollingFrame");
 	["_QIaV"] = Instance.new("TextButton");
-	["_UITextSizeConstraint34"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript39"] = Instance.new("LocalScript");
-	["_DGF"] = Instance.new("TextButton");
-	["_UITextSizeConstraint35"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript40"] = Instance.new("LocalScript");
-	["_OG"] = Instance.new("TextButton");
-	["_UITextSizeConstraint36"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript41"] = Instance.new("LocalScript");
-	["_AudibleOrSilent"] = Instance.new("BoolValue");
-	["_firstmethod"] = Instance.new("BoolValue");
-	["_secondmethod"] = Instance.new("BoolValue");
+	["_LocalScript38"] = Instance.new("LocalScript");
 	["_UIListLayout3"] = Instance.new("UIListLayout");
-	["_SettingFrame"] = Instance.new("ScrollingFrame");
-	["_Audibly"] = Instance.new("TextButton");
-	["_UITextSizeConstraint37"] = Instance.new("UITextSizeConstraint");
-	["_LocalScript42"] = Instance.new("LocalScript");
+	["_DGF"] = Instance.new("TextButton");
+	["_LocalScript39"] = Instance.new("LocalScript");
+	["_OAG"] = Instance.new("TextButton");
+	["_LocalScript40"] = Instance.new("LocalScript");
+	["_QIaVFrame"] = Instance.new("ScrollingFrame");
 	["_Silently"] = Instance.new("TextButton");
-	["_UITextSizeConstraint38"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript41"] = Instance.new("LocalScript");
+	["_Audibly"] = Instance.new("TextButton");
+	["_LocalScript42"] = Instance.new("LocalScript");
+	["_UIListLayout4"] = Instance.new("UIListLayout");
+	["_UIPadding4"] = Instance.new("UIPadding");
+	["_AudibleOrSilent"] = Instance.new("BoolValue");
+	["_Capable"] = Instance.new("TextButton");
 	["_LocalScript43"] = Instance.new("LocalScript");
-	["_one"] = Instance.new("TextButton");
-	["_UITextSizeConstraint39"] = Instance.new("UITextSizeConstraint");
+	["_DGFFrame"] = Instance.new("ScrollingFrame");
+	["_Overgiver"] = Instance.new("TextButton");
 	["_LocalScript44"] = Instance.new("LocalScript");
-	["_two"] = Instance.new("TextButton");
-	["_UITextSizeConstraint40"] = Instance.new("UITextSizeConstraint");
+	["_Minimalist"] = Instance.new("TextButton");
 	["_LocalScript45"] = Instance.new("LocalScript");
+	["_UIListLayout5"] = Instance.new("UIListLayout");
+	["_UIPadding5"] = Instance.new("UIPadding");
+	["_firstmethod"] = Instance.new("BoolValue");
+	["_Capable1"] = Instance.new("TextButton");
+	["_LocalScript46"] = Instance.new("LocalScript");
+	["_secondmethod"] = Instance.new("BoolValue");
+	["_OAGFrame"] = Instance.new("ScrollingFrame");
+	["_UIListLayout6"] = Instance.new("UIListLayout");
+	["_UIPadding6"] = Instance.new("UIPadding");
+	["_Capable2"] = Instance.new("TextButton");
+	["_LocalScript47"] = Instance.new("LocalScript");
+	["_UIAspectRatioConstraint31"] = Instance.new("UIAspectRatioConstraint");
 	["_QuickAbilities"] = Instance.new("LocalScript");
 	["_ExposeThatPD"] = Instance.new("LocalScript");
 }
@@ -1495,7 +1501,7 @@ Converted["_Ok"].Name = "Ok"
 Converted["_Ok"].Parent = Converted["_SuperWarningDGRS"]
 
 Converted["_CreepstuLab"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_CreepstuLab"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 47.0000009983778)
+Converted["_CreepstuLab"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 47.0000009983778)
 Converted["_CreepstuLab"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_CreepstuLab"].BorderSizePixel = 0
 Converted["_CreepstuLab"].Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -1545,173 +1551,225 @@ Converted["_Header"].Parent = Converted["_CreepstuLab"]
 Converted["_UITextSizeConstraint33"].MaxTextSize = 15
 Converted["_UITextSizeConstraint33"].Parent = Converted["_Header"]
 
-Converted["_Settings"].Image = "rbxassetid://485882401"
-Converted["_Settings"].ImageColor3 = Color3.fromRGB(255, 0, 0)
-Converted["_Settings"].AnchorPoint = Vector2.new(1, 0)
-Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Settings"].BackgroundTransparency = 1
-Converted["_Settings"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Settings"].BorderSizePixel = 0
-Converted["_Settings"].Position = UDim2.new(1, 0, 0, 0)
-Converted["_Settings"].Size = UDim2.new(0, 25, 1, 0)
-Converted["_Settings"].Name = "Settings"
-Converted["_Settings"].Parent = Converted["_Header"]
-
-Converted["_MainFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
-Converted["_MainFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Converted["_MainFrame"].ElasticBehavior = Enum.ElasticBehavior.Always
-Converted["_MainFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_MainFrame"].ScrollBarThickness = 0
-Converted["_MainFrame"].Active = true
-Converted["_MainFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_MainFrame"].BackgroundTransparency = 1
-Converted["_MainFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_MainFrame"].BorderSizePixel = 0
-Converted["_MainFrame"].Position = UDim2.new(0, 0, 0, 25)
-Converted["_MainFrame"].Size = UDim2.new(1, 0, 1, -25)
-Converted["_MainFrame"].Name = "MainFrame"
-Converted["_MainFrame"].Parent = Converted["_CreepstuLab"]
+Converted["_Tabs"].AutomaticCanvasSize = Enum.AutomaticSize.X
+Converted["_Tabs"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_Tabs"].HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Converted["_Tabs"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tabs"].ScrollBarThickness = 0
+Converted["_Tabs"].Active = true
+Converted["_Tabs"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Tabs"].BackgroundTransparency = 1
+Converted["_Tabs"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tabs"].BorderSizePixel = 0
+Converted["_Tabs"].Position = UDim2.new(0, 0, 0, 25)
+Converted["_Tabs"].Size = UDim2.new(1, 0, 0, 25)
+Converted["_Tabs"].Name = "Tabs"
+Converted["_Tabs"].Parent = Converted["_CreepstuLab"]
 
 Converted["_QIaV"].Font = Enum.Font.Sarpanch
-Converted["_QIaV"].Text = "Quickly Invisible and Visible"
+Converted["_QIaV"].Text = "Quick Invisible and Visible"
 Converted["_QIaV"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_QIaV"].TextScaled = true
-Converted["_QIaV"].TextSize = 15
-Converted["_QIaV"].TextWrapped = true
-Converted["_QIaV"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_QIaV"].BorderColor3 = Color3.fromRGB(255, 60.00000022351742, 56.000000461936)
-Converted["_QIaV"].Position = UDim2.new(0, 16, 0, 41)
-Converted["_QIaV"].Size = UDim2.new(1, -32, 0, 30)
+Converted["_QIaV"].TextSize = 14
+Converted["_QIaV"].TextStrokeTransparency = 0
+Converted["_QIaV"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_QIaV"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_QIaV"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_QIaV"].BorderSizePixel = 0
+Converted["_QIaV"].LayoutOrder = 1
+Converted["_QIaV"].Size = UDim2.new(0, 153, 1, 0)
 Converted["_QIaV"].Name = "QIaV"
-Converted["_QIaV"].Parent = Converted["_MainFrame"]
+Converted["_QIaV"].Parent = Converted["_Tabs"]
 
-Converted["_UITextSizeConstraint34"].MaxTextSize = 15
-Converted["_UITextSizeConstraint34"].Parent = Converted["_QIaV"]
+Converted["_UIListLayout3"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout3"].Parent = Converted["_Tabs"]
 
 Converted["_DGF"].Font = Enum.Font.Sarpanch
 Converted["_DGF"].Text = "Drop Gifts Faster"
 Converted["_DGF"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_DGF"].TextScaled = true
-Converted["_DGF"].TextSize = 15
-Converted["_DGF"].TextWrapped = true
-Converted["_DGF"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_DGF"].BorderColor3 = Color3.fromRGB(255, 60.00000022351742, 56.000000461936)
-Converted["_DGF"].Position = UDim2.new(0, 16, 0, 41)
-Converted["_DGF"].Size = UDim2.new(1, -32, 0, 30)
+Converted["_DGF"].TextSize = 14
+Converted["_DGF"].TextStrokeTransparency = 0
+Converted["_DGF"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_DGF"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_DGF"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DGF"].BorderSizePixel = 0
+Converted["_DGF"].LayoutOrder = 2
+Converted["_DGF"].Size = UDim2.new(0, 100, 1, 0)
 Converted["_DGF"].Name = "DGF"
-Converted["_DGF"].Parent = Converted["_MainFrame"]
+Converted["_DGF"].Parent = Converted["_Tabs"]
 
-Converted["_UITextSizeConstraint35"].MaxTextSize = 15
-Converted["_UITextSizeConstraint35"].Parent = Converted["_DGF"]
+Converted["_OAG"].Font = Enum.Font.Sarpanch
+Converted["_OAG"].Text = "Open All Gifts"
+Converted["_OAG"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_OAG"].TextSize = 14
+Converted["_OAG"].TextStrokeTransparency = 0
+Converted["_OAG"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_OAG"].BackgroundColor3 = Color3.fromRGB(50.000000819563866, 50.000000819563866, 50.000000819563866)
+Converted["_OAG"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OAG"].BorderSizePixel = 0
+Converted["_OAG"].LayoutOrder = 3
+Converted["_OAG"].Size = UDim2.new(0, 82, 1, 0)
+Converted["_OAG"].Name = "OAG"
+Converted["_OAG"].Parent = Converted["_Tabs"]
 
-Converted["_OG"].Font = Enum.Font.Sarpanch
-Converted["_OG"].Text = "Open Gifts"
-Converted["_OG"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_OG"].TextScaled = true
-Converted["_OG"].TextSize = 15
-Converted["_OG"].TextWrapped = true
-Converted["_OG"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_OG"].BorderColor3 = Color3.fromRGB(255, 60.00000022351742, 56.000000461936)
-Converted["_OG"].Position = UDim2.new(0, 16, 0, 41)
-Converted["_OG"].Size = UDim2.new(1, -32, 0, 30)
-Converted["_OG"].Name = "OG"
-Converted["_OG"].Parent = Converted["_MainFrame"]
+Converted["_QIaVFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_QIaVFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_QIaVFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_QIaVFrame"].Active = true
+Converted["_QIaVFrame"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 47.0000009983778)
+Converted["_QIaVFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_QIaVFrame"].BorderSizePixel = 0
+Converted["_QIaVFrame"].Position = UDim2.new(0, 0, 0, 50)
+Converted["_QIaVFrame"].Size = UDim2.new(1, 0, 1, -50)
+Converted["_QIaVFrame"].Visible = false
+Converted["_QIaVFrame"].Name = "QIaVFrame"
+Converted["_QIaVFrame"].Parent = Converted["_CreepstuLab"]
 
-Converted["_UITextSizeConstraint36"].MaxTextSize = 15
-Converted["_UITextSizeConstraint36"].Parent = Converted["_OG"]
+Converted["_Silently"].Font = Enum.Font.Sarpanch
+Converted["_Silently"].Text = "Silently"
+Converted["_Silently"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Silently"].TextSize = 14
+Converted["_Silently"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Silently"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Silently"].LayoutOrder = 2
+Converted["_Silently"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Silently"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Silently"].Name = "Silently"
+Converted["_Silently"].Parent = Converted["_QIaVFrame"]
+
+Converted["_Audibly"].Font = Enum.Font.Sarpanch
+Converted["_Audibly"].Text = "Audibly"
+Converted["_Audibly"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Audibly"].TextSize = 14
+Converted["_Audibly"].BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Converted["_Audibly"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Audibly"].LayoutOrder = 3
+Converted["_Audibly"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Audibly"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Audibly"].Name = "Audibly"
+Converted["_Audibly"].Parent = Converted["_QIaVFrame"]
+
+Converted["_UIListLayout4"].Wraps = true
+Converted["_UIListLayout4"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout4"].Parent = Converted["_QIaVFrame"]
+
+Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 8)
+Converted["_UIPadding4"].PaddingTop = UDim.new(0, 8)
+Converted["_UIPadding4"].Parent = Converted["_QIaVFrame"]
 
 Converted["_AudibleOrSilent"].Name = "AudibleOrSilent"
-Converted["_AudibleOrSilent"].Parent = Converted["_MainFrame"]
+Converted["_AudibleOrSilent"].Parent = Converted["_QIaVFrame"]
+
+Converted["_Capable"].Font = Enum.Font.Sarpanch
+Converted["_Capable"].Text = "[Disabled]"
+Converted["_Capable"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Capable"].TextSize = 14
+Converted["_Capable"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["_Capable"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Capable"].LayoutOrder = 1
+Converted["_Capable"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Capable"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Capable"].Name = "Capable"
+Converted["_Capable"].Parent = Converted["_QIaVFrame"]
+
+Converted["_DGFFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_DGFFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_DGFFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DGFFrame"].Active = true
+Converted["_DGFFrame"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 47.0000009983778)
+Converted["_DGFFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DGFFrame"].BorderSizePixel = 0
+Converted["_DGFFrame"].Position = UDim2.new(0, 0, 0, 50)
+Converted["_DGFFrame"].Size = UDim2.new(1, 0, 1, -50)
+Converted["_DGFFrame"].Visible = false
+Converted["_DGFFrame"].Name = "DGFFrame"
+Converted["_DGFFrame"].Parent = Converted["_CreepstuLab"]
+
+Converted["_Overgiver"].Font = Enum.Font.Sarpanch
+Converted["_Overgiver"].Text = "Over-giver"
+Converted["_Overgiver"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Overgiver"].TextSize = 14
+Converted["_Overgiver"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Overgiver"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Overgiver"].LayoutOrder = 3
+Converted["_Overgiver"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Overgiver"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Overgiver"].Name = "Overgiver"
+Converted["_Overgiver"].Parent = Converted["_DGFFrame"]
+
+Converted["_Minimalist"].Font = Enum.Font.Sarpanch
+Converted["_Minimalist"].Text = "Minimalist"
+Converted["_Minimalist"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Minimalist"].TextSize = 14
+Converted["_Minimalist"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Minimalist"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Minimalist"].LayoutOrder = 2
+Converted["_Minimalist"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Minimalist"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Minimalist"].Name = "Minimalist"
+Converted["_Minimalist"].Parent = Converted["_DGFFrame"]
+
+Converted["_UIListLayout5"].Wraps = true
+Converted["_UIListLayout5"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout5"].Parent = Converted["_DGFFrame"]
+
+Converted["_UIPadding5"].PaddingLeft = UDim.new(0, 8)
+Converted["_UIPadding5"].PaddingTop = UDim.new(0, 8)
+Converted["_UIPadding5"].Parent = Converted["_DGFFrame"]
 
 Converted["_firstmethod"].Name = "firstmethod"
-Converted["_firstmethod"].Parent = Converted["_MainFrame"]
+Converted["_firstmethod"].Parent = Converted["_DGFFrame"]
+
+Converted["_Capable1"].Font = Enum.Font.Sarpanch
+Converted["_Capable1"].Text = "[Disabled]"
+Converted["_Capable1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Capable1"].TextSize = 14
+Converted["_Capable1"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["_Capable1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Capable1"].LayoutOrder = 1
+Converted["_Capable1"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Capable1"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Capable1"].Name = "Capable"
+Converted["_Capable1"].Parent = Converted["_DGFFrame"]
 
 Converted["_secondmethod"].Name = "secondmethod"
-Converted["_secondmethod"].Parent = Converted["_MainFrame"]
+Converted["_secondmethod"].Parent = Converted["_DGFFrame"]
 
-Converted["_UIListLayout3"].VerticalFlex = Enum.UIFlexAlignment.SpaceEvenly
-Converted["_UIListLayout3"].HorizontalAlignment = Enum.HorizontalAlignment.Center
-Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout3"].Parent = Converted["_MainFrame"]
+Converted["_OAGFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Converted["_OAGFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["_OAGFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OAGFrame"].Active = true
+Converted["_OAGFrame"].BackgroundColor3 = Color3.fromRGB(30.00000011175871, 30.00000011175871, 47.0000009983778)
+Converted["_OAGFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_OAGFrame"].BorderSizePixel = 0
+Converted["_OAGFrame"].Position = UDim2.new(0, 0, 0, 50)
+Converted["_OAGFrame"].Size = UDim2.new(1, 0, 1, -50)
+Converted["_OAGFrame"].Visible = false
+Converted["_OAGFrame"].Name = "OAGFrame"
+Converted["_OAGFrame"].Parent = Converted["_CreepstuLab"]
 
-Converted["_SettingFrame"].AutomaticCanvasSize = Enum.AutomaticSize.XY
-Converted["_SettingFrame"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Converted["_SettingFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SettingFrame"].ScrollBarThickness = 0
-Converted["_SettingFrame"].Active = true
-Converted["_SettingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_SettingFrame"].BackgroundTransparency = 1
-Converted["_SettingFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SettingFrame"].BorderSizePixel = 0
-Converted["_SettingFrame"].Position = UDim2.new(0, 0, 0, 25)
-Converted["_SettingFrame"].Size = UDim2.new(1, 0, 1, -25)
-Converted["_SettingFrame"].Visible = false
-Converted["_SettingFrame"].Name = "SettingFrame"
-Converted["_SettingFrame"].Parent = Converted["_CreepstuLab"]
+Converted["_UIListLayout6"].Wraps = true
+Converted["_UIListLayout6"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout6"].Parent = Converted["_OAGFrame"]
 
-Converted["_Audibly"].Font = Enum.Font.Jura
-Converted["_Audibly"].Text = "Audibly"
-Converted["_Audibly"].TextColor3 = Color3.fromRGB(0, 255, 0)
-Converted["_Audibly"].TextScaled = true
-Converted["_Audibly"].TextSize = 14
-Converted["_Audibly"].TextWrapped = true
-Converted["_Audibly"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 30.00000201165676)
-Converted["_Audibly"].BorderColor3 = Color3.fromRGB(132.0000073313713, 132.0000073313713, 132.0000073313713)
-Converted["_Audibly"].Position = UDim2.new(0, 8, 0, 8)
-Converted["_Audibly"].Size = UDim2.new(0, 52, 0, 19)
-Converted["_Audibly"].Name = "Audibly"
-Converted["_Audibly"].Parent = Converted["_SettingFrame"]
+Converted["_UIPadding6"].PaddingLeft = UDim.new(0, 8)
+Converted["_UIPadding6"].PaddingTop = UDim.new(0, 8)
+Converted["_UIPadding6"].Parent = Converted["_OAGFrame"]
 
-Converted["_UITextSizeConstraint37"].MaxTextSize = 14
-Converted["_UITextSizeConstraint37"].Parent = Converted["_Audibly"]
+Converted["_Capable2"].Font = Enum.Font.Sarpanch
+Converted["_Capable2"].Text = "[Disabled]"
+Converted["_Capable2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Capable2"].TextSize = 14
+Converted["_Capable2"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["_Capable2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Capable2"].LayoutOrder = 1
+Converted["_Capable2"].Position = UDim2.new(0, 8, 0, 8)
+Converted["_Capable2"].Size = UDim2.new(0, 100, 0, 20)
+Converted["_Capable2"].Name = "Capable"
+Converted["_Capable2"].Parent = Converted["_OAGFrame"]
 
-Converted["_Silently"].Font = Enum.Font.Jura
-Converted["_Silently"].Text = "Silently"
-Converted["_Silently"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Silently"].TextScaled = true
-Converted["_Silently"].TextSize = 14
-Converted["_Silently"].TextWrapped = true
-Converted["_Silently"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 30.00000201165676)
-Converted["_Silently"].BorderColor3 = Color3.fromRGB(132.0000073313713, 132.0000073313713, 132.0000073313713)
-Converted["_Silently"].Position = UDim2.new(0, 61, 0, 8)
-Converted["_Silently"].Size = UDim2.new(0, 52, 0, 19)
-Converted["_Silently"].Name = "Silently"
-Converted["_Silently"].Parent = Converted["_SettingFrame"]
-
-Converted["_UITextSizeConstraint38"].MaxTextSize = 14
-Converted["_UITextSizeConstraint38"].Parent = Converted["_Silently"]
-
-Converted["_one"].Font = Enum.Font.Jura
-Converted["_one"].Text = "v1"
-Converted["_one"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_one"].TextScaled = true
-Converted["_one"].TextSize = 14
-Converted["_one"].TextWrapped = true
-Converted["_one"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 30.00000201165676)
-Converted["_one"].BorderColor3 = Color3.fromRGB(132.0000073313713, 132.0000073313713, 132.0000073313713)
-Converted["_one"].Position = UDim2.new(0, 8, 0, 36)
-Converted["_one"].Size = UDim2.new(0, 16, 0, 19)
-Converted["_one"].Name = "one"
-Converted["_one"].Parent = Converted["_SettingFrame"]
-
-Converted["_UITextSizeConstraint39"].MaxTextSize = 14
-Converted["_UITextSizeConstraint39"].Parent = Converted["_one"]
-
-Converted["_two"].Font = Enum.Font.Jura
-Converted["_two"].Text = "v2"
-Converted["_two"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_two"].TextScaled = true
-Converted["_two"].TextSize = 14
-Converted["_two"].TextWrapped = true
-Converted["_two"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 30.00000201165676)
-Converted["_two"].BorderColor3 = Color3.fromRGB(132.0000073313713, 132.0000073313713, 132.0000073313713)
-Converted["_two"].Position = UDim2.new(0, 25, 0, 36)
-Converted["_two"].Size = UDim2.new(0, 18, 0, 19)
-Converted["_two"].Name = "two"
-Converted["_two"].Parent = Converted["_SettingFrame"]
-
-Converted["_UITextSizeConstraint40"].MaxTextSize = 14
-Converted["_UITextSizeConstraint40"].Parent = Converted["_two"]
+Converted["_UIAspectRatioConstraint31"].AspectRatio = 1.260032057762146
+Converted["_UIAspectRatioConstraint31"].Parent = Converted["_CreepstuLab"]
 
 -- Fake Module Scripts:
 
@@ -1720,7 +1778,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function QENMTR_fake_script() -- Fake Script: Workspace.SGUI.History
+local function AVRCC_fake_script() -- Fake Script: Workspace.SGUI.History
     local script = Instance.new("LocalScript")
     script.Name = "History"
     script.Parent = Converted["_SGUI"]
@@ -1787,7 +1845,7 @@ local function QENMTR_fake_script() -- Fake Script: Workspace.SGUI.History
 	end
 	
 end
-local function TLGK_fake_script() -- Fake Script: Workspace.SGUI.RTOpenLootbox
+local function CQXHK_fake_script() -- Fake Script: Workspace.SGUI.RTOpenLootbox
     local script = Instance.new("LocalScript")
     script.Name = "RTOpenLootbox"
     script.Parent = Converted["_SGUI"]
@@ -1803,7 +1861,7 @@ local function TLGK_fake_script() -- Fake Script: Workspace.SGUI.RTOpenLootbox
 	local Event = game:GetService("ReplicatedStorage").Remotes.PremiumLootbox
 	Event:FireServer()
 end
-local function UDGEJ_fake_script() -- Fake Script: Workspace.SGUI.LoadedMessage
+local function OIGM_fake_script() -- Fake Script: Workspace.SGUI.LoadedMessage
     local script = Instance.new("LocalScript")
     script.Name = "LoadedMessage"
     script.Parent = Converted["_SGUI"]
@@ -1825,7 +1883,7 @@ local function UDGEJ_fake_script() -- Fake Script: Workspace.SGUI.LoadedMessage
 		Icon = "rbxassetid://1169528749"
 	})
 end
-local function CJEI_fake_script() -- Fake Script: Workspace.SGUI.PDaccess
+local function EDWDP_fake_script() -- Fake Script: Workspace.SGUI.PDaccess
     local script = Instance.new("LocalScript")
     script.Name = "PDaccess"
     script.Parent = Converted["_SGUI"]
@@ -1844,7 +1902,7 @@ local function CJEI_fake_script() -- Fake Script: Workspace.SGUI.PDaccess
 	game.ReplicatedStorage.PD[plr.Name].active.stamina.Value = true
 	game.ReplicatedStorage.PD[plr.Name].active.nightvis.Value = true
 end
-local function BPTFGQM_fake_script() -- Fake Script: Workspace.SGUI.AutoLeaderboard
+local function GZESXD_fake_script() -- Fake Script: Workspace.SGUI.AutoLeaderboard
     local script = Instance.new("LocalScript")
     script.Name = "AutoLeaderboard"
     script.Parent = Converted["_SGUI"]
@@ -1869,7 +1927,7 @@ local function BPTFGQM_fake_script() -- Fake Script: Workspace.SGUI.AutoLeaderbo
 	
 	
 end
-local function UADPG_fake_script() -- Fake Script: Workspace.SGUI.Interfacedit
+local function YAGGR_fake_script() -- Fake Script: Workspace.SGUI.Interfacedit
     local script = Instance.new("LocalScript")
     script.Name = "Interfacedit"
     script.Parent = Converted["_SGUI"]
@@ -1893,7 +1951,7 @@ local function UADPG_fake_script() -- Fake Script: Workspace.SGUI.Interfacedit
 		end 
 	end
 end
-local function EPCQCEC_fake_script() -- Fake Script: Workspace.SGUI.AutoChat
+local function YKTAZM_fake_script() -- Fake Script: Workspace.SGUI.AutoChat
     local script = Instance.new("LocalScript")
     script.Name = "AutoChat"
     script.Parent = Converted["_SGUI"]
@@ -1916,7 +1974,7 @@ local function EPCQCEC_fake_script() -- Fake Script: Workspace.SGUI.AutoChat
 	    end
 	end
 end
-local function NPIGSQU_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
+local function UYKSE_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
     local script = Instance.new("LocalScript")
     script.Name = "HolderInfo"
     script.Parent = Converted["_SGUI"]
@@ -1992,13 +2050,21 @@ local function NPIGSQU_fake_script() -- Fake Script: Workspace.SGUI.HolderInfo
 					hoverinfo.Text = "This feature helps you break free from Slender's grab. This button is toggleable"
 				elseif v.Name == "OpenCreepstuLab" then
 					hoverinfo.Text = "Stunning features"
+				elseif v.Name == "Silently" then
+					hoverinfo.Text = "Visible as Slender without making sound"
+				elseif v.Name == "Audibly" then
+					hoverinfo.Text = "Visible as Slender with sound"
+				elseif v.Name == "Minimalist" then
+					hoverinfo.Text = "Avoid giving 7 gifts in 1 gift box (a box that holds 7 gifts to Citizens or Spectators)"
+				elseif v.Name == "Overgiver" then
+					hoverinfo.Text = "You have to stand still for this to work and stop after 5 seconds dropping too much gifts"
 				end
 				--===========================================================--
 			end)
 		end
 	end
 end
-local function RYNIX_fake_script() -- Fake Script: Workspace.SGUI.HistoryLabel.LocalScript
+local function RZLFDA_fake_script() -- Fake Script: Workspace.SGUI.HistoryLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_HistoryLabel"]
@@ -2018,7 +2084,7 @@ local function RYNIX_fake_script() -- Fake Script: Workspace.SGUI.HistoryLabel.L
 		textLabel.Text = ""
 	end)
 end
-local function DEAVHRW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.SoundSystem
+local function LZBCIOH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.SoundSystem
     local script = Instance.new("LocalScript")
     script.Name = "SoundSystem"
     script.Parent = Converted["_CheatButton"]
@@ -2050,7 +2116,7 @@ local function DEAVHRW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end
 end
-local function ZDWK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Animation
+local function CBKFY_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Animation
     local script = Instance.new("LocalScript")
     script.Name = "Animation"
     script.Parent = Converted["_CheatButton"]
@@ -2125,7 +2191,7 @@ local function ZDWK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ani
 		end
 	end)
 end
-local function CXDYIDN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.TextLabel.LocalScript
+local function KBTMMH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.TextLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextLabel"]
@@ -2150,7 +2216,7 @@ local function CXDYIDN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 	
 	GameValues.pages.Changed:Connect(checkCurrentPage)
 end
-local function IDECECP_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.LocalScript
+local function KWKTEGS_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Page.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Page"]
@@ -2240,7 +2306,7 @@ local function IDECECP_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end)
 end
-local function TAITW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Generator.LocalScript
+local function EXMNV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Generator.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Generator"]
@@ -2293,7 +2359,7 @@ local function TAITW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 		end
 	end)
 end
-local function GGBATTN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.TextLabel.LocalScript
+local function OIKOGN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.TextLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextLabel2"]
@@ -2323,7 +2389,7 @@ local function GGBATTN_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 	
 	GameValues.lastslender.Changed:Connect(checkPlayerUsername)
 end
-local function FDJMF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.LocalScript
+local function PZXU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.Slender.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Slender"]
@@ -2360,7 +2426,7 @@ local function FDJMF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 		ESP.slender = true
 	end)
 end
-local function DNXUGW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.NextPage.LocalScript
+local function UHWT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.NextPage.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_NextPage"]
@@ -2388,7 +2454,7 @@ local function DNXUGW_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 		
 	end)
 end
-local function TTOH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.FullBright.LocalScript
+local function FYPE_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.FullBright.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_FullBright"]
@@ -2411,7 +2477,7 @@ local function TTOH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 	end)
 end
-local function JAQCES_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Immune.LocalScript
+local function ETZBBAX_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Immune.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Immune"]
@@ -2440,7 +2506,7 @@ local function JAQCES_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 		end
 	end)
 end
-local function RZBT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.CollectGifts.LocalScript
+local function ZOKRPZT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.CollectGifts.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_CollectGifts"]
@@ -2493,7 +2559,7 @@ local function RZBT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function TURSRNP_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.SpeedHack.LocalScript
+local function DYRYFZC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.SpeedHack.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpeedHack"]
@@ -2523,7 +2589,7 @@ local function TURSRNP_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end
 	end)
 end
-local function HYDI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Trip.LocalScript
+local function QYKR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Trip.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Trip"]
@@ -2551,7 +2617,7 @@ local function HYDI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function BXOZZ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Laugh.LocalScript
+local function AWRU_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder1.Laugh.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Laugh"]
@@ -2586,7 +2652,7 @@ local function BXOZZ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 	
 	textButton.MouseButton1Click:Connect(onButtonClick)
 end
-local function QYHBJTC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.DestroyGUI.LocalScript
+local function LYFM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.DestroyGUI.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DestroyGUI"]
@@ -2603,6 +2669,7 @@ local function QYHBJTC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 	local problem1 = script.Parent.Parent.Parent.Parent.Parent.ABFStatus 
 	local problem2 = script.Parent.Parent.Parent.Parent.Parent.PWFStatus 
 	local problem3 = script.Parent.Parent.Parent.Parent.Parent.ACGStatus
+	local StarterGui = game:GetService("StarterGui")
 	
 	textButton.MouseButton1Click:Connect(function() 
 		if problem1.TextColor3 == Color3.new(0, 1, 0) 
@@ -2611,12 +2678,18 @@ local function QYHBJTC_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		then 
 			script.Parent.Parent.Parent.Parent.Parent.SuperWarningDGRS.Visible = true 
 		else 
-			task.wait(2) 
+			StarterGui:SetCore("SendNotification", {
+				Title = "Bye",
+				Text = "",
+				Duration = 2,
+				Icon = "rbxassetid://1169528749"
+			})
+			task.wait(2)
 			script.Parent.Parent.Parent.Parent.Parent:Destroy() 
 		end 
 	end)
 end
-local function WVTEQQF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.ResetCharacter.LocalScript
+local function WFEF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.ResetCharacter.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ResetCharacter"]
@@ -2633,7 +2706,7 @@ local function WVTEQQF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-local function UGEA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.RefreshScript.LocalScript
+local function RMTJLOA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.RefreshScript.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_RefreshScript"]
@@ -2662,7 +2735,7 @@ local function UGEA_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end 
 	end)
 end
-local function KEPGD_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Proxy.LocalScript
+local function KTTMJB_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Proxy.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Proxy"]
@@ -2686,7 +2759,7 @@ local function KEPGD_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 		})
 	end)
 end
-local function OMAM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Info.LocalScript
+local function AYBK_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.Info.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Info"]
@@ -2713,7 +2786,7 @@ local function OMAM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function SJLD_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.TrollAudio.LocalScript
+local function BOYJGJ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.TrollAudio.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TrollAudio"]
@@ -2751,7 +2824,7 @@ local function SJLD_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		end
 	end)
 end
-local function BVYSHV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.PlayWithFlashlight.LocalScript
+local function PZFDBP_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.PlayWithFlashlight.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_PlayWithFlashlight"]
@@ -2782,7 +2855,7 @@ local function BVYSHV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 		end
 	end)
 end
-local function OPZSQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.UIStroke.LocalScript
+local function WDBH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.UIStroke.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_UIStroke20"]
@@ -2800,11 +2873,11 @@ local function OPZSQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 	local hue = 0
 	
 	RunService.Heartbeat:Connect(function(deltaTime)
-		hue = (hue + deltaTime * 0.2) % 1
+		hue = (hue + deltaTime * 1) % 1
 		script.Parent.Color = Color3.fromHSV(hue, 1, 1)
 	end)
 end
-local function NDSONGO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.LocalScript
+local function EMVZTJT_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.ExtraButtonsHolder2.OpenCreepstuLab.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_OpenCreepstuLab"]
@@ -2829,7 +2902,7 @@ local function NDSONGO_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		end	
 	end)
 end
-local function JTXGI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhoIsSlender.LocalScript
+local function BVAEQQ_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhoIsSlender.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WhoIsSlender"]
@@ -2859,7 +2932,7 @@ local function JTXGI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Ho
 	
 	GameValues.lastslender.Changed:Connect(checkPlayerUsername)
 end
-local function DNQOMB_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Pages.LocalScript
+local function KWEZKH_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Pages.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Pages"]
@@ -2884,7 +2957,7 @@ local function DNQOMB_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 	
 	tha.Changed:Connect(checkPage)
 end
-local function JYLFBM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Versi0n.LocalScript
+local function NAAMV_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.Versi0n.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Versi0n"]
@@ -2899,7 +2972,7 @@ local function JYLFBM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 
 	script.Parent.Text = "Mod Version: " .. ver
 end
-local function DHOXZMM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.AccountAge.LocalScript
+local function LSWX_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.AccountAge.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AccountAge"]
@@ -2918,7 +2991,7 @@ local function DHOXZMM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.
 		script.Parent.Text = "Your Account Age: " .. player.AccountAge
 	end
 end
-local function YQRVIM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhatIsTheNextMap.LocalScript
+local function CYKITAI_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Holder.SuperInfo.WhatIsTheNextMap.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_WhatIsTheNextMap"]
@@ -2957,7 +3030,7 @@ local function YQRVIM_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.H
 		end
 	end
 end
-local function XLBVIN_fake_script() -- Fake Script: Workspace.SGUI.Noticer.LocalScript
+local function OUVMSN_fake_script() -- Fake Script: Workspace.SGUI.Noticer.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Noticer"]
@@ -2977,7 +3050,7 @@ local function XLBVIN_fake_script() -- Fake Script: Workspace.SGUI.Noticer.Local
 		textLabel.Visible = false
 	end)
 end
-local function RPZBXGQ_fake_script() -- Fake Script: Workspace.SGUI.InfoTeller.LocalScript
+local function XIGLCE_fake_script() -- Fake Script: Workspace.SGUI.InfoTeller.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_InfoTeller"]
@@ -2994,7 +3067,7 @@ local function RPZBXGQ_fake_script() -- Fake Script: Workspace.SGUI.InfoTeller.L
 		script.Parent.Text = ""
 	end)
 end
-local function RFIZ_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
+local function WVTXPDC_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
     local script = Instance.new("LocalScript")
     script.Name = "UsersOnJoin"
     script.Parent = Converted["_SGUI"]
@@ -3040,7 +3113,7 @@ local function RFIZ_fake_script() -- Fake Script: Workspace.SGUI.UsersOnJoin
 	
 	
 end
-local function NBPD_fake_script() -- Fake Script: Workspace.SGUI.SuperDisclaimer.LocalScript
+local function RQYAS_fake_script() -- Fake Script: Workspace.SGUI.SuperDisclaimer.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SuperDisclaimer"]
@@ -3067,7 +3140,7 @@ local function NBPD_fake_script() -- Fake Script: Workspace.SGUI.SuperDisclaimer
 		end
 	end)
 end
-local function GKWPS_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabel.LocalScript
+local function TSNLY_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextLabel3"]
@@ -3082,6 +3155,8 @@ local function GKWPS_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabe
 
 	script.Parent.Text = [[
 	i made Slender’s abilities appear much quicker when you go invisible.
+	
+	i also made Citizen's camera able to go higher or lower Y-Axis.
 	
 	if you are using the gift collector feature, you must not stand still or it will delay the dropper. try adjusting the 'v1' and 'v2' settings if the feature is not working.
 	
@@ -3116,7 +3191,7 @@ local function GKWPS_fake_script() -- Fake Script: Workspace.SGUI.Frame.TextLabe
 	this cheat is not open-source because I feel like Kinnis has seen the raw script and patched the PoopEgg feature. you have to DM me on WhatsApp to get the open-source version: +60 13-503 6056. i dont use AI to build this cheat.
 	]]
 end
-local function BRFP_fake_script() -- Fake Script: Workspace.SGUI.Auto-collectPages.LocalScript
+local function KWTQK_fake_script() -- Fake Script: Workspace.SGUI.Auto-collectPages.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Auto-collectPages"]
@@ -3134,7 +3209,7 @@ local function BRFP_fake_script() -- Fake Script: Workspace.SGUI.Auto-collectPag
 		script.Parent.Visible = false
 	end)
 end
-local function OGWDF_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Main
+local function XIFV_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Main
     local script = Instance.new("LocalScript")
     script.Name = "Main"
     script.Parent = Converted["_SlenderVisibility"]
@@ -3163,7 +3238,7 @@ local function OGWDF_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibil
 	
 	gameValues.Changed:Connect(checkvalue)
 end
-local function MCDBC_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.AnnoyingVisibility
+local function CHUQ_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.AnnoyingVisibility
     local script = Instance.new("LocalScript")
     script.Name = "AnnoyingVisibility"
     script.Parent = Converted["_SlenderVisibility"]
@@ -3188,7 +3263,7 @@ local function MCDBC_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibil
 		end
 	end)
 end
-local function UFBMJUN_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Availability
+local function YWMGBOB_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibility.Availability
     local script = Instance.new("LocalScript")
     script.Name = "Availability"
     script.Parent = Converted["_SlenderVisibility"]
@@ -3215,7 +3290,7 @@ local function UFBMJUN_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisib
 	
 	gameValues.Changed:Connect(checkvalue)
 end
-local function HXRT_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree.LocalScript
+local function HDDXA_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Auto-breakFree"]
@@ -3264,7 +3339,7 @@ local function HXRT_fake_script() -- Fake Script: Workspace.SGUI.Auto-breakFree.
 		end
 	end)
 end
-local function VXRNBF_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.TextLabel.LocalScript
+local function ZJURYED_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.TextLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextLabel5"]
@@ -3283,7 +3358,7 @@ local function VXRNBF_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningA
 	[Red Flag]
 	Are you sure?]]
 end
-local function RDSIVAJ_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.Yes.LocalScript
+local function ONGVV_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.Yes.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Yes"]
@@ -3319,7 +3394,7 @@ local function RDSIVAJ_fake_script() -- Fake Script: Workspace.SGUI.SuperWarning
 		mTTP(v5)
 	end)
 end
-local function DFGC_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.No.LocalScript
+local function GYTQDI_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP.No.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_No"]
@@ -3337,7 +3412,7 @@ local function DFGC_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningACP
 		script.Parent.Parent.Parent["Auto-collectPages"].Visible = true
 	end)
 end
-local function MVBHQH_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Main
+local function OJNHS_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Main
     local script = Instance.new("LocalScript")
     script.Name = "Main"
     script.Parent = Converted["_SlenderVisibilityptii"]
@@ -3366,7 +3441,7 @@ local function MVBHQH_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibi
 	
 	gameValues.Changed:Connect(checkvalue)
 end
-local function XNCKX_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Availability
+local function MRLKF_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibilityptii.Availability
     local script = Instance.new("LocalScript")
     script.Name = "Availability"
     script.Parent = Converted["_SlenderVisibilityptii"]
@@ -3393,7 +3468,7 @@ local function XNCKX_fake_script() -- Fake Script: Workspace.SGUI.SlenderVisibil
 	
 	gameValues.Changed:Connect(checkvalue)
 end
-local function NACQT_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.TextLabel.LocalScript
+local function BSPV_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.TextLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextLabel7"]
@@ -3412,7 +3487,7 @@ local function NACQT_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDG
 	Make sure turn off all green toggles before destroying or refreshing this cheat]]
 	
 end
-local function CSIWMC_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.Ok.LocalScript
+local function SGKFZQ_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningDGRS.Ok.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Ok"]
@@ -3429,34 +3504,7 @@ local function CSIWMC_fake_script() -- Fake Script: Workspace.SGUI.SuperWarningD
 		script.Parent.Parent.Visible = false
 	end)
 end
-local function LDHN_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Header.Settings.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Settings"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ena = false
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		ena = not ena
-		
-		if ena then
-			script.Parent.Parent.Parent.MainFrame.Visible = false
-			script.Parent.Parent.Parent.SettingFrame.Visible = true
-		else
-			script.Parent.Parent.Parent.MainFrame.Visible = true
-			script.Parent.Parent.Parent.SettingFrame.Visible = false
-		end
-	end)
-end
-local function WQOWPBQ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.QIaV.LocalScript
+local function MQFOTSK_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Tabs.QIaV.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_QIaV"]
@@ -3469,33 +3517,13 @@ local function WQOWPBQ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.
         return req(obj)
     end
 
-	local ena = false
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		ena = not ena
-		
-		if ena then
-			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 195)
-			
-			repeat
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
-				task.wait()
-			until ena == false
-		else
-			script.Parent.BorderColor3 = Color3.fromRGB(255, 60, 56)
-		end
+		script.Parent.Parent.Parent.OAGFrame.Visible = false
+		script.Parent.Parent.Parent.QIaVFrame.Visible = true
+		script.Parent.Parent.Parent.DGFFrame.Visible = false
 	end)
 end
-local function MNGHV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.DGF.LocalScript
+local function MCKA_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Tabs.DGF.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_DGF"]
@@ -3508,75 +3536,16 @@ local function MNGHV_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Ma
         return req(obj)
     end
 
-	local ena = false
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		ena = not ena
-	
-		if ena then
-			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 195)
-	
-			repeat
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
-				task.wait()
-			until ena == false
-		else
-			script.Parent.BorderColor3 = Color3.fromRGB(255, 60, 56)
-		end
+		script.Parent.Parent.Parent.OAGFrame.Visible = false
+		script.Parent.Parent.Parent.QIaVFrame.Visible = false
+		script.Parent.Parent.Parent.DGFFrame.Visible = true
 	end)
 end
-local function QDEEEM_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.MainFrame.OG.LocalScript
+local function QYAHRN_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Tabs.OAG.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Converted["_OG"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	local ena = false
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		ena = not ena
-		
-		if ena then
-			script.Parent.BorderColor3 = Color3.fromRGB(0, 195, 199)
-			
-			repeat
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
-				task.wait()
-			until ena == false
-		else
-			script.Parent.BorderColor3 = Color3.fromRGB(255, 60, 56)
-		end
-	end)
-end
-local function UPDC_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Audibly.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Audibly"]
+    script.Parent = Converted["_OAG"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -3587,12 +3556,12 @@ local function UPDC_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Set
     end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.TextColor3 = Color3.new(0, 1, 0)
-		script.Parent.Parent.Silently.TextColor3 = Color3.new(1, 1, 1)
-		script.Parent.Parent.Parent.MainFrame.AudibleOrSilent.Value = false
+		script.Parent.Parent.Parent.OAGFrame.Visible = true
+		script.Parent.Parent.Parent.QIaVFrame.Visible = false
+		script.Parent.Parent.Parent.DGFFrame.Visible = false
 	end)
 end
-local function BSYW_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.Silently.LocalScript
+local function RARQBBK_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.QIaVFrame.Silently.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Silently"]
@@ -3606,15 +3575,73 @@ local function BSYW_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Set
     end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.TextColor3 = Color3.new(0, 1, 0)
-		script.Parent.Parent.Audibly.TextColor3 = Color3.new(1, 1, 1)
-		script.Parent.Parent.Parent.MainFrame.AudibleOrSilent.Value = true
+		script.Parent.BackgroundColor3 = Color3.new(0, 1, 0)
+		script.Parent.Parent.Audibly.BackgroundColor3 = Color3.new(1, 0, 0)
+		script.Parent.Parent.AudibleOrSilent.Value = true
 	end)
 end
-local function GGBRU_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.one.LocalScript
+local function FDEWCW_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.QIaVFrame.Audibly.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Converted["_one"]
+    script.Parent = Converted["_Audibly"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(0, 1, 0)
+		script.Parent.Parent.Silently.BackgroundColor3 = Color3.new(1, 0, 0)
+		script.Parent.Parent.AudibleOrSilent.Value = false
+	end)
+end
+local function NPRTHQI_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.QIaVFrame.Capable.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Capable"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ena = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		ena = not ena
+		
+		if ena then
+			script.Parent.Text = "[Enabled]"
+			
+			repeat
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				game.ReplicatedStorage.Remotes.ToggleVis:FireServer(script.Parent.Parent.AudibleOrSilent.Value, true)
+				task.wait()
+			until ena == false
+		else
+			script.Parent.Text = "[Disabled]"
+		end
+	end)
+end
+local function CNRFBH_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.DGFFrame.Overgiver.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Overgiver"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -3630,18 +3657,18 @@ local function GGBRU_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Se
 		ena = not ena
 	
 		if ena then
-			script.Parent.TextColor3 = Color3.new(0, 1, 0)
-			script.Parent.Parent.Parent.MainFrame.firstmethod.Value = true
+			script.Parent.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.firstmethod.Value = true
 		else
-			script.Parent.TextColor3 = Color3.new(1, 1, 1)
-			script.Parent.Parent.Parent.MainFrame.firstmethod.Value = false
+			script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.firstmethod.Value = false
 		end
 	end)
 end
-local function DFPEJ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.SettingFrame.two.LocalScript
+local function NERT_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.DGFFrame.Minimalist.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Converted["_two"]
+    script.Parent = Converted["_Minimalist"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -3657,15 +3684,103 @@ local function DFPEJ_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Se
 		ena = not ena
 	
 		if ena then
-			script.Parent.TextColor3 = Color3.new(0, 1, 0)
-			script.Parent.Parent.Parent.MainFrame.secondmethod.Value = true
+			script.Parent.BackgroundColor3 = Color3.new(0, 1, 0)
+			script.Parent.Parent.secondmethod.Value = true
 		else
-			script.Parent.TextColor3 = Color3.new(1, 1, 1)
-			script.Parent.Parent.Parent.MainFrame.secondmethod.Value = false
+			script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Parent.secondmethod.Value = false
 		end
 	end)
 end
-local function TTGUH_fake_script() -- Fake Script: Workspace.SGUI.QuickAbilities
+local function CVKHH_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.DGFFrame.Capable.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Capable1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ena = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		ena = not ena
+	
+		if ena then
+			script.Parent.Text = "[Enabled]"
+	
+			repeat
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				game.ReplicatedStorage.Remotes.XMas:FireServer("place", script.Parent.Parent.firstmethod.Value, script.Parent.Parent.secondmethod.Value, false)
+				task.wait()
+			until ena == false
+		else
+			script.Parent.Text = "[Disabled]"
+		end
+	end)
+end
+local function XJGS_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.OAGFrame.Capable.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Capable2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local ena = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		ena = not ena
+		
+		if ena then
+			script.Parent.Text = "[Enabled]"
+			
+			repeat
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				game.ReplicatedStorage.Remotes.XMasReward:InvokeServer()
+				task.wait()
+			until ena == false
+		else
+			script.Parent.Text = "[Disabled]"
+		end
+	end)
+end
+local function UGDEHDY_fake_script() -- Fake Script: Workspace.SGUI.QuickAbilities
     local script = Instance.new("LocalScript")
     script.Name = "QuickAbilities"
     script.Parent = Converted["_SGUI"]
@@ -3694,7 +3809,7 @@ local function TTGUH_fake_script() -- Fake Script: Workspace.SGUI.QuickAbilities
 	
 	gameValues.Changed:Connect(checkvalue)
 end
-local function OVNWIPF_fake_script() -- Fake Script: Workspace.SGUI.ExposeThatPD
+local function LKUM_fake_script() -- Fake Script: Workspace.SGUI.ExposeThatPD
     local script = Instance.new("LocalScript")
     script.Name = "ExposeThatPD"
     script.Parent = Converted["_SGUI"]
@@ -3710,72 +3825,79 @@ local function OVNWIPF_fake_script() -- Fake Script: Workspace.SGUI.ExposeThatPD
 	print('冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖')
 	for x, y in pairs(game.ReplicatedStorage.PD:GetDescendants()) do
 		if y.Name == "gifts" and y.Parent then
-			print("bro " ..y.Parent.Name.. " has " ..y.Value)
+			print("bro " ..y.Parent.Name.. " has " ..y.Value.. "gift(s)")
+		end
+	end
+	for x, y in pairs(game.ReplicatedStorage.PD:GetDescendants()) do
+		if y.Name == "hcandy" and y.Parent then
+			print("bro " ..y.Parent.Name.. " has " ..y.Value.. "candy(ies)")
 		end
 	end
 end
 
-coroutine.wrap(QENMTR_fake_script)()
-coroutine.wrap(TLGK_fake_script)()
-coroutine.wrap(UDGEJ_fake_script)()
-coroutine.wrap(CJEI_fake_script)()
-coroutine.wrap(BPTFGQM_fake_script)()
-coroutine.wrap(UADPG_fake_script)()
-coroutine.wrap(EPCQCEC_fake_script)()
-coroutine.wrap(NPIGSQU_fake_script)()
-coroutine.wrap(RYNIX_fake_script)()
-coroutine.wrap(DEAVHRW_fake_script)()
-coroutine.wrap(ZDWK_fake_script)()
-coroutine.wrap(CXDYIDN_fake_script)()
-coroutine.wrap(IDECECP_fake_script)()
-coroutine.wrap(TAITW_fake_script)()
-coroutine.wrap(GGBATTN_fake_script)()
-coroutine.wrap(FDJMF_fake_script)()
-coroutine.wrap(DNXUGW_fake_script)()
-coroutine.wrap(TTOH_fake_script)()
-coroutine.wrap(JAQCES_fake_script)()
-coroutine.wrap(RZBT_fake_script)()
-coroutine.wrap(TURSRNP_fake_script)()
-coroutine.wrap(HYDI_fake_script)()
-coroutine.wrap(BXOZZ_fake_script)()
-coroutine.wrap(QYHBJTC_fake_script)()
-coroutine.wrap(WVTEQQF_fake_script)()
-coroutine.wrap(UGEA_fake_script)()
-coroutine.wrap(KEPGD_fake_script)()
-coroutine.wrap(OMAM_fake_script)()
-coroutine.wrap(SJLD_fake_script)()
-coroutine.wrap(BVYSHV_fake_script)()
-coroutine.wrap(OPZSQ_fake_script)()
-coroutine.wrap(NDSONGO_fake_script)()
-coroutine.wrap(JTXGI_fake_script)()
-coroutine.wrap(DNQOMB_fake_script)()
-coroutine.wrap(JYLFBM_fake_script)()
-coroutine.wrap(DHOXZMM_fake_script)()
-coroutine.wrap(YQRVIM_fake_script)()
-coroutine.wrap(XLBVIN_fake_script)()
-coroutine.wrap(RPZBXGQ_fake_script)()
-coroutine.wrap(RFIZ_fake_script)()
-coroutine.wrap(NBPD_fake_script)()
-coroutine.wrap(GKWPS_fake_script)()
-coroutine.wrap(BRFP_fake_script)()
-coroutine.wrap(OGWDF_fake_script)()
-coroutine.wrap(MCDBC_fake_script)()
-coroutine.wrap(UFBMJUN_fake_script)()
-coroutine.wrap(HXRT_fake_script)()
-coroutine.wrap(VXRNBF_fake_script)()
-coroutine.wrap(RDSIVAJ_fake_script)()
-coroutine.wrap(DFGC_fake_script)()
-coroutine.wrap(MVBHQH_fake_script)()
-coroutine.wrap(XNCKX_fake_script)()
-coroutine.wrap(NACQT_fake_script)()
-coroutine.wrap(CSIWMC_fake_script)()
-coroutine.wrap(LDHN_fake_script)()
-coroutine.wrap(WQOWPBQ_fake_script)()
-coroutine.wrap(MNGHV_fake_script)()
-coroutine.wrap(QDEEEM_fake_script)()
-coroutine.wrap(UPDC_fake_script)()
-coroutine.wrap(BSYW_fake_script)()
-coroutine.wrap(GGBRU_fake_script)()
-coroutine.wrap(DFPEJ_fake_script)()
-coroutine.wrap(TTGUH_fake_script)()
-coroutine.wrap(OVNWIPF_fake_script)()
+coroutine.wrap(AVRCC_fake_script)()
+coroutine.wrap(CQXHK_fake_script)()
+coroutine.wrap(OIGM_fake_script)()
+coroutine.wrap(EDWDP_fake_script)()
+coroutine.wrap(GZESXD_fake_script)()
+coroutine.wrap(YAGGR_fake_script)()
+coroutine.wrap(YKTAZM_fake_script)()
+coroutine.wrap(UYKSE_fake_script)()
+coroutine.wrap(RZLFDA_fake_script)()
+coroutine.wrap(LZBCIOH_fake_script)()
+coroutine.wrap(CBKFY_fake_script)()
+coroutine.wrap(KBTMMH_fake_script)()
+coroutine.wrap(KWKTEGS_fake_script)()
+coroutine.wrap(EXMNV_fake_script)()
+coroutine.wrap(OIKOGN_fake_script)()
+coroutine.wrap(PZXU_fake_script)()
+coroutine.wrap(UHWT_fake_script)()
+coroutine.wrap(FYPE_fake_script)()
+coroutine.wrap(ETZBBAX_fake_script)()
+coroutine.wrap(ZOKRPZT_fake_script)()
+coroutine.wrap(DYRYFZC_fake_script)()
+coroutine.wrap(QYKR_fake_script)()
+coroutine.wrap(AWRU_fake_script)()
+coroutine.wrap(LYFM_fake_script)()
+coroutine.wrap(WFEF_fake_script)()
+coroutine.wrap(RMTJLOA_fake_script)()
+coroutine.wrap(KTTMJB_fake_script)()
+coroutine.wrap(AYBK_fake_script)()
+coroutine.wrap(BOYJGJ_fake_script)()
+coroutine.wrap(PZFDBP_fake_script)()
+coroutine.wrap(WDBH_fake_script)()
+coroutine.wrap(EMVZTJT_fake_script)()
+coroutine.wrap(BVAEQQ_fake_script)()
+coroutine.wrap(KWEZKH_fake_script)()
+coroutine.wrap(NAAMV_fake_script)()
+coroutine.wrap(LSWX_fake_script)()
+coroutine.wrap(CYKITAI_fake_script)()
+coroutine.wrap(OUVMSN_fake_script)()
+coroutine.wrap(XIGLCE_fake_script)()
+coroutine.wrap(WVTXPDC_fake_script)()
+coroutine.wrap(RQYAS_fake_script)()
+coroutine.wrap(TSNLY_fake_script)()
+coroutine.wrap(KWTQK_fake_script)()
+coroutine.wrap(XIFV_fake_script)()
+coroutine.wrap(CHUQ_fake_script)()
+coroutine.wrap(YWMGBOB_fake_script)()
+coroutine.wrap(HDDXA_fake_script)()
+coroutine.wrap(ZJURYED_fake_script)()
+coroutine.wrap(ONGVV_fake_script)()
+coroutine.wrap(GYTQDI_fake_script)()
+coroutine.wrap(OJNHS_fake_script)()
+coroutine.wrap(MRLKF_fake_script)()
+coroutine.wrap(BSPV_fake_script)()
+coroutine.wrap(SGKFZQ_fake_script)()
+coroutine.wrap(MQFOTSK_fake_script)()
+coroutine.wrap(MCKA_fake_script)()
+coroutine.wrap(QYAHRN_fake_script)()
+coroutine.wrap(RARQBBK_fake_script)()
+coroutine.wrap(FDEWCW_fake_script)()
+coroutine.wrap(NPRTHQI_fake_script)()
+coroutine.wrap(CNRFBH_fake_script)()
+coroutine.wrap(NERT_fake_script)()
+coroutine.wrap(CVKHH_fake_script)()
+coroutine.wrap(XJGS_fake_script)()
+coroutine.wrap(UGDEHDY_fake_script)()
+coroutine.wrap(LKUM_fake_script)()
