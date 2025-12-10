@@ -299,12 +299,10 @@ local Converted = {
 	["_LocalScript49"] = Instance.new("LocalScript");
 }
 
--- Properties:
-
 Converted["_SGUI"].IgnoreGuiInset = true
 Converted["_SGUI"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_SGUI"].Name = "SGUI"
-Converted["_SGUI"].Parent = game.Workspace
+Converted["_SGUI"].Parent = game.CoreGui
 
 Converted["_laugh"].PlaybackSpeed = 0.699999988079071
 Converted["_laugh"].SoundId = "rbxassetid://133017003825496"
