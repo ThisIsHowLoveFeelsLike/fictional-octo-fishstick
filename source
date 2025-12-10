@@ -299,10 +299,12 @@ local Converted = {
 	["_LocalScript49"] = Instance.new("LocalScript");
 }
 
+-- Properties:
+
 Converted["_SGUI"].IgnoreGuiInset = true
 Converted["_SGUI"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_SGUI"].Name = "SGUI"
-Converted["_SGUI"].Parent = game.CoreGui
+Converted["_SGUI"].Parent = game.Workspace
 
 Converted["_laugh"].PlaybackSpeed = 0.699999988079071
 Converted["_laugh"].SoundId = "rbxassetid://133017003825496"
@@ -2843,7 +2845,7 @@ local function CSHF_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		then 
 			script.Parent.Parent.Parent.Parent.Parent.SuperWarningDGRS.Visible = true 
 		else 
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisIsHowLoveFeelsLike/fictional-octo-fishstick/main/source"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/frzfrsy/stopitslender/main/source"))()
 		end 
 	end)
 end
@@ -3823,12 +3825,13 @@ local function MGZYAG_fake_script() -- Fake Script: Workspace.SGUI.ExposeThatPD
 		print('冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖')
 		for x, y in pairs(game.ReplicatedStorage.PD:GetDescendants()) do
 			if y.Name == "gifts" and y.Parent then
-				print("bro " ..y.Parent.Name.. " has " ..y.Value.. "gift(s)")
+				print(y.Parent.Name.. " has " ..y.Value.. " gifts")
 			end
 		end
+		print('冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖冖')
 		for x, y in pairs(game.ReplicatedStorage.PD:GetDescendants()) do
 			if y.Name == "hcandy" and y.Parent then
-				print("bro " ..y.Parent.Name.. " has " ..y.Value.. "candy(ies)")
+				print(y.Parent.Name.. " has " ..y.Value.. " candies")
 			end
 		end
 	end
