@@ -4143,7 +4143,7 @@ local function VUMAX_fake_script() -- Fake Script: Workspace.SGUI.CreepstuLab.Sa
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		StarterGui:SetCore("SendNotification", {
-			Title = "Must be in Spectator team first",
+			Title = "Must be in Spectating team first",
 			Text = "",
 			Duration = 3,
 			Icon = "rbxassetid://1169528749"
@@ -4170,7 +4170,7 @@ local function TKMQERU_fake_script() -- Fake Script: Workspace.SGUI.SpectatorSta
 	
 	local function gST()
 		for _, v in pairs(TeamsService:GetTeams()) do
-			if v.Name == "Spectator" then
+			if v.Name == "Spectating" then
 				return v
 			end
 		end
