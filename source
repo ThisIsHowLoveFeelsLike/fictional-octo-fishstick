@@ -1,3 +1,8 @@
+_G.KeyForCB = "LeftControl"
+_G.KeyForGenerator = "C"
+_G.KeyForPage = "X"
+_G.KeyForSlender = "Z"
+
 local fsgui = game.CoreGui:FindFirstChild("SGUI")
 if fsgui then
 	fsgui:Destroy()
@@ -299,12 +304,10 @@ local Converted = {
 	["_LocalScript49"] = Instance.new("LocalScript");
 }
 
--- Properties:
-
 Converted["_SGUI"].IgnoreGuiInset = true
 Converted["_SGUI"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_SGUI"].Name = "SGUI"
-Converted["_SGUI"].Parent = game.Workspace
+Converted["_SGUI"].Parent = game.CoreGui
 
 Converted["_laugh"].PlaybackSpeed = 0.699999988079071
 Converted["_laugh"].SoundId = "rbxassetid://133017003825496"
@@ -2452,7 +2455,7 @@ local function PVXR_fake_script() -- Fake Script: Workspace.SGUI.CheatButton.Hol
 		local lastSlenderUsername = GameValues.lastslender.Value
 		for _, player in Players:GetPlayers() do
 			if player.Name == lastSlenderUsername then
-				script.Parent.Text = player.DisplayName.. "(" .._G.KeyForSlender.. ")"
+				script.Parent.Text = player.DisplayName.. " (" .._G.KeyForSlender.. ")"
 				return
 			end
 		end
