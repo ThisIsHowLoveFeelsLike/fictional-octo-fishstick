@@ -5,7 +5,7 @@ end
 
 local player = game.Players.LocalPlayer
 
-if player.Name == "MrLaDxD" or player.Name == "screepstu" then
+if player.Name == "MrLaDxD" or player.Name == "neverlose1654" or player.Name == "on2for5" then
 	local remotesFolder = game.ReplicatedStorage:WaitForChild("Remotes")
 	for _, v in ipairs(remotesFolder:GetChildren()) do
 		if v:IsA("RemoteEvent") then
